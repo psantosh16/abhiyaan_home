@@ -121,7 +121,7 @@ const Home = () => {
       >
         <div className="image_wraper overflow-hidden">
           <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between  gap-2 md:gap-52 lg:gap-[30rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
-            <img src="/assets/astro1.png"   alt="astro" />
+            <img src="/assets/astro1.png" alt="astro" />
             <img src="/assets/satellite.webp" alt="satellite" />
             <img
               ref={(el) => {
@@ -145,7 +145,7 @@ const Home = () => {
               ref={(el) => {
                 earthImg = el;
               }}
-              id="earth"
+              id="earth_image"
               className="overflow-hidden m-auto"
               src="/assets/planet.webp"
               alt="earth"
