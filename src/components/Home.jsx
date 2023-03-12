@@ -20,6 +20,8 @@ const Home = () => {
     
     gsap.to(earthImg, {
       scrollTrigger: {
+        trigger:"#home_main",
+
         start: "1% top",
         end: "20% top",
         scrub: 0.8,
@@ -47,6 +49,7 @@ const Home = () => {
     )
     .to(earthImg, {
       scrollTrigger: {
+        trigger:"#home_main",
         start: "10% top",
         end: "20% top",
         scrub: 0.8,
@@ -57,6 +60,8 @@ const Home = () => {
     })
       .to(strn, {
         scrollTrigger: {
+        trigger:"#home_main",
+
           start: "10% top",
           end: "20% top",
           scrub: 0.8,
@@ -64,12 +69,14 @@ const Home = () => {
         },
         zIndex: 40,
         scale: 1.2,
-        y: -500,
+        y: -280,
         delay:10,
-        x: 800,
+        x: 760,
       })
       .to(txt, {
         scrollTrigger: {
+        trigger:"#home_main",
+
           start: "10% top",
           end: "20% top",
           scrub: 0.8,
@@ -81,15 +88,17 @@ const Home = () => {
       })
       .to(astro, {
         scrollTrigger: {
+        trigger:"#home_main",
+
           start: "10% top",
           end: "20% top",
           scrub: 1,
           // markers:true
         },
-        zIndex: 400,
+        zIndex: 40,
         scale: 1.2,
-        x: -1000,
-        y: -150,
+        x: -760,
+        y: -280,
       }).to(
         "#home_main",
         {
@@ -106,23 +115,22 @@ const Home = () => {
             y:-1000
         },"+=1"
       )
-    // tl.play();
   });
   return (
     <>
       <div
-        className="z-10 w-screen h-screen bg-[url('/assets/bg.jpg')] relative top-0 left-0"
+        className=" overflow-hidden z-10 w-screen h-screen bg-[url('/assets/bg.jpg')] relative top-0 left-0"
         style={{
-          backgroundSize: "fil",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "50%",
         }}
         id="home_main"
       >
         <div className="image_wraper overflow-hidden">
-          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between  gap-2 md:gap-52 lg:gap-[30rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
-            <img src="/assets/astro1.png" alt="astro" />
-            <img src="/assets/satellite.webp" alt="satellite" />
+          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between gap-2 md:gap-52 lg:gap-[30rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
+            <img src="/assets/astro1.png" alt="astro" id="animate" />
+            <img src="/assets/satellite.webp" alt="satellite" id="animate2" />
             <img
               ref={(el) => {
                 strn = el;
@@ -155,7 +163,7 @@ const Home = () => {
                 txt = el;
               }}
               id="text"
-              className="text-6xl md:text-[8rem] text-center m-auto font-Logo tracking-wide overflow-hidden absolute top-[45vh] md:top-[45vh]"
+              className="text-6xl md:text-[8rem] lg:text-[10rem] text-center m-auto font-Logo tracking-wide overflow-hidden absolute top-[45vh] md:top-[45vh]"
             >
               <span className="tt">A</span>
               <span className="tt">B</span>
@@ -169,7 +177,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 container w-screen h-screen" id="about"></div>
+      <div className=" w-screen h-screen" id="about">
+        about
+      </div>
+      <div className=" w-screen h-screen bg-green-600" id="gallery">
+      </div>
+      <div className=" w-screen h-screen bg-yellow-600" id="events">
+      </div>
+      <div className=" w-screen h-screen bg-cyan-600" id="sponsers">
+      </div>
+
     </>
   );
 };
