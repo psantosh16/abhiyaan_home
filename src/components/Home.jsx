@@ -64,8 +64,9 @@ const Home = () => {
         },
         zIndex: 40,
         scale: 1.2,
-        y: -150,
-        x: 350,
+        y: -500,
+        delay:10,
+        x: 800,
       })
       .to(txt, {
         scrollTrigger: {
@@ -87,8 +88,8 @@ const Home = () => {
         },
         zIndex: 400,
         scale: 1.2,
-        x: -350,
-        y: -120,
+        x: -1000,
+        y: -150,
       }).to(
         "#home_main",
         {
@@ -110,22 +111,23 @@ const Home = () => {
   return (
     <>
       <div
-        className="z-10  container w-screen h-[100vh] bg-[url('/assets/bg.jpg')] relative top-0 left-0"
+        className="z-10 w-screen h-screen bg-[url('/assets/bg.jpg')] relative top-0 left-0"
         style={{
-          backgroundSize: "cover",
+          backgroundSize: "fil",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "80%",
+          backgroundPosition: "50%",
         }}
         id="home_main"
       >
         <div className="image_wraper overflow-hidden">
-          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between  gap-2 md:gap-64 lg:gap-96 pb-2 md:pb-36 lg:pb-56 p-2 relative top-0 bottom-0 left-0 right-0">
+          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between  gap-2 md:gap-52 lg:gap-[30rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
             <img src="/assets/astro1.png"   alt="astro" />
             <img src="/assets/satellite.webp" alt="satellite" />
             <img
               ref={(el) => {
                 strn = el;
               }}
+              className=" z-50"
               src="/assets/saturn.webp"
               alt="planet"
             />
@@ -133,6 +135,7 @@ const Home = () => {
               ref={(el) => {
                 astro = el;
               }}
+              className="z-50"
               src="/assets/astro3.webp"
               alt="astro2"
             />
@@ -152,7 +155,7 @@ const Home = () => {
                 txt = el;
               }}
               id="text"
-              className="text-6xl md:text-[7rem] text-center m-auto font-Logo tracking-wide overflow-hidden absolute top-[45vh] md:top-[40vh]"
+              className="text-6xl md:text-[8rem] text-center m-auto font-Logo tracking-wide overflow-hidden absolute top-[45vh] md:top-[45vh]"
             >
               <span className="tt">A</span>
               <span className="tt">B</span>
