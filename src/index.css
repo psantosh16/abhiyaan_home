@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+#home_main::after{
+  content: "";
+  position: absolute;
+  bottom:-2px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  /* mix-blend-mode: multiply; */
+  background: linear-gradient(to top,#000000, transparent) ;
+  z-index: 1000;
+}
+#home_main::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(to bottom,#000000, transparent) ;
+  z-index: 10;
+}
+
+
