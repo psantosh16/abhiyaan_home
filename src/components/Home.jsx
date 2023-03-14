@@ -2,9 +2,12 @@
 import { useEffect, useRef } from "react";
 import gsap, { Power4 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Logo from "../assets/logo.png";
+import LogoBg from "../assets/logobg.png";
 
 // Import CSS
 import "../index.css";
+import About from "./About";
 
 const Home = () => {
   // Getting Reference for animation
@@ -73,7 +76,7 @@ const Home = () => {
         },
         zIndex: 40,
         scale: 1.2,
-        y: -280,
+        y: -300,
         delay: 10,
         x: 760,
       })
@@ -85,7 +88,7 @@ const Home = () => {
           scrub: 0.8,
         },
         zIndex: 40,
-        scale: 1.02,
+        scale: 1.6,
         y: 150,
       })
       .to(astro, {
@@ -99,34 +102,39 @@ const Home = () => {
         zIndex: 40,
         scale: 1.2,
         x: -760,
-        y: -280,
-      })
-      .to(
-        "#home_main",
-        {
-          scrollTrigger: {
-            trigger: ".tt",
-            start: "10% top",
-            end: "30% top",
-            scrub: 1,
+        y: -300,
+      }).to(
+          "#home_main",
+          {
+            scrollTrigger: {
+              trigger: ".tt",
+              start: "10% top",
+              end: "30% top",
+              scrub: 1,
+            },
+            delay: 10,
+            y: -1000,
           },
-          delay: 10,
-          y: -1000,
-        },
-        "+=1"
-      );
+          "+=1"
+        );
   });
 
   //? Actual render
   return (
     <>
       <div
-        className=" overflow-hidden bg-no-repeat bg-center  bg-cover z-10 w-screen h-screen bg-[url('/assets/bg.jpg')] relative top-0 left-0"
+        className=" overflow-hidden bg-no-repeat bg-cover z-10 w-screen h-screen relative top-0 left-0"
+        style={{
+          background: "#000000",
+          background: " -webkit-linear-gradient(bottom,#000000,#3c1053)",
+          background: " -moz-linear-gradient(bottom,#000000,#3c1053)",
+          background: "linear-gradient(to top,#000000,#3c1053)",
+        }}
         id="home_main"
       >
         <div className="overflow-hidden" id="image_wraper">
           {/* Side-Images Start */}
-          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between gap-2 md:gap-52 lg:gap-[30rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
+          <section className="overflow-hidden scroll-smooth w-screen h-screen grid grid-cols-2 content-between gap-2 md:gap-52 lg:gap-[20rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
             <img src="/assets/astro1.png" alt="astro" id="animate" />
             <img src="/assets/satellite.webp" alt="satellite" id="animate2" />
             <img
@@ -154,26 +162,28 @@ const Home = () => {
                 earthImg = el;
               }}
               id="earth_image"
-              className="overflow-hidden m-auto"
-              src="/assets/planet.webp"
+              className="overflow-hidden m-auto "
+              src={LogoBg}
               alt="earth"
             ></img>
-            <h1
+            {/* <div></div> */}
+            {/* <h1
               ref={(el) => {
                 txt = el;
               }}
               id="text"
-              className="text-6xl md:text-[8rem] lg:text-[10rem] text-center m-auto font-Logo tracking-wide overflow-hidden absolute top-[45vh] md:top-[45vh]"
+              className="text-6xl md:text-[8rem] lg:text-[10rem] text-center m-auto tracking-widest overflow-x-hidden absolute top-[45vh] md:top-[45vh]"
             >
-              <span className="tt">A</span>
-              <span className="tt">B</span>
-              <span className="tt">H</span>
-              <span className="tt">I</span>
-              <span className="tt">Y</span>
-              <span className="tt">A</span>
-              <span className="tt">A</span>
-              <span className="tt">N</span>
-            </h1>
+              <span className="tt font-hindi italic">अ</span>
+              <span className="tt font-hindi italic">भि</span>
+              <span className="tt font-bold">y</span>
+              <span className="tt font-logo font-bold">a</span>
+              <span className="tt font-logo font-bold">a</span>
+              <span className="tt font-logo font-bold">n</span>
+            </h1> */}
+            <img src={Logo} ref={(el) => {txt = el}}
+              className="overflow-hidden w-[28rem] h-[28rem] m-auto absolute "
+            />
           </div>
           {/* Hero-Images End */}
         </div>
@@ -181,7 +191,7 @@ const Home = () => {
 
       {/* Other Pages */}
       <div className=" w-screen h-screen" id="about">
-        About
+        <About />
       </div>
       <div className=" w-screen h-screen bg-green-600" id="gallery"></div>
       <div className=" w-screen h-screen bg-yellow-600" id="events"></div>

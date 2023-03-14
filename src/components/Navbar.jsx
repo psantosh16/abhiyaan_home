@@ -1,10 +1,13 @@
+import Logo from "../assets/logo.png"
 const Navbar = () => {
   return (
     <nav className="fixed w-screen top-0 z-[1000] bg-white backdrop-filter backdrop-blur-lg bg-opacity-10 rounded-b-[1rem]" id="nav_main">  
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-14" id="nav_inner_wrapper">
           {/* Logo */}
-          <span id="nav_logo"  className="text-2xl text-white font-semibold">Abhiyaan</span>
+          <span id="nav_logo"  className="">
+            <img src={Logo} className="h-[9rem] w-[10rem]" alt="logo"/>
+          </span>
           {/* Bar_Icon svg */}
           <div id="bar_icon"  className="md:hidden">
             <svg

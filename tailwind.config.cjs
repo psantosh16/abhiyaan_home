@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        Logo:['Changa One', 'cursive'],
-        cardB:['Blaka Ink', 'cursive']
+        english:['Just Another Hand', 'cursive'],
+        marquee:['Moul', 'cursive'],
+        hindi:['Rozha One', 'serif'],
+        logo:['Kaushan Script', 'cursive'],
+        badcats:["BadCats" , "cursive"],
+        ams:["ams", "cursive"],
       }
     },
   },
