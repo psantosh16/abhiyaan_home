@@ -65,7 +65,7 @@ const Logo = () => {
         ref={(el) => {
           txt = el;
         }}
-        className="overflow-hidden w-[16rem] h-[16rem] md:w-[36rem] md:h-[36rem] lg:w-[38rem]  lg:h-[38rem] m-auto absolute "
+        className="overflow-hidden w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] lg:w-[40rem]  lg:h-[40rem] m-auto absolute "
       />
     </>
   );

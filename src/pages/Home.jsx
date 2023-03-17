@@ -91,7 +91,7 @@ const Home = () => {
         <ParticalBackground />
         <div className="overflow-hidden" id="image_wraper">
           {/* Side-Images Start */}
-          <section className="overflow-hidden scroll-smooth w-full h-screen grid grid-cols-2 content-evenly gap-20 md:gap-52 lg:gap-[20rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
+          <section className="overflow-hidden scroll-smooth w-full h-screen grid grid-cols-2 content-evenly gap-28 md:gap-60 lg:gap-[20rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
             <img
               className="lg:w-72"
               src="/assets/astro1.png"
@@ -99,7 +99,7 @@ const Home = () => {
               id="animate"
             />
             <img
-              className="lg:w-72 lg:ml-64"
+              className="lg:w-72 lg:ml-52"
               src="/assets/satellite.webp"
               alt="satellite"
               id="animate2"
@@ -116,7 +116,7 @@ const Home = () => {
               ref={(el) => {
                 astro = el;
               }}
-              className="z-50 lg:w-72 lg:ml-64"
+              className="z-50 lg:w-72 lg:ml-52"
               src="/assets/astro3.webp"
               alt="astro2"
             />
