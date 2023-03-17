@@ -1,9 +1,9 @@
 // Importing Modules
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import ParticalBackground from "./configs/ParticalBackground";
+// import ParticalBackground from "../configs/ParticalBackground";
 
 const App = () => {
   // Refrencing cursor
@@ -67,7 +67,7 @@ const App = () => {
           <Navbar />
         </div>
         <Home />
-      <ParticalBackground/>
+      {/* <ParticalBackground/> */}
 
       </div>
     </>
