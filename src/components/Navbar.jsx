@@ -1,9 +1,57 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
-
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const [mobile, setMobile] = useState(false);
+
+  function HandelRender({ name }) {
+    if (name == "Home") {
+      if (mobile == true) {
+        return (
+          <a
+            href={"#root"}
+            onClick={() => {
+              setNavbar(!navbar);
+            }}
+          >
+            {name}
+          </a>
+        );
+      } else {
+        return <a href={"#root"}>{name}</a>;
+      }
+    } else {
+      if (mobile == true) {
+        return (
+          <a
+            href={"#" + name}
+            onClick={() => {
+              setNavbar(!navbar);
+            }}
+          >
+            {name}
+          </a>
+        );
+      } else {
+        return <a href={"#" + name}>{name}</a>;
+      }
+    }
+  }
+
+  useEffect(() => {
+    function checkMobile() {
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+      if (width < 768 && height > width) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    }
+    checkMobile();
+  }, []);
 
   return (
     <nav
@@ -16,17 +64,17 @@ const Navbar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between h-14 overflow-hidden">
           <div>
-          <img
-            src={Logo}
-            className={`h-auto w-[10rem] overflow-hidden ${
-              navbar ? "hidden" : "visible"
-            } `}
-            alt="logo"
-          />
+            <img
+              src={Logo}
+              className={`h-auto w-[10rem] overflow-hidden ${
+                navbar ? "hidden" : "visible"
+              } `}
+              alt="logo"
+            />
           </div>
           <div className="md:hidden">
             <button
-              className=" text-white rounded-md outline-none"
+              className=" text-white rounded-md outline-none md:hidden"
               onClick={() => setNavbar(!navbar)}
             >
               {navbar ? (
@@ -69,24 +117,10 @@ const Navbar = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white overflow-hidden hover:text-blue-600">
-                <a
-                  href="#root"
-                  onClick={() => {
-                    setNavbar(!navbar);
-                  }}
-                >
-                  Home
-                </a>
+                <HandelRender name="home" />
               </li>
               <li className="text-white overflow-hidden hover:text-blue-600">
-                <a
-                  href="#about"
-                  onClick={() => {
-                    setNavbar(!navbar);
-                  }}
-                >
-                  About
-                </a>
+                <HandelRender name="about" />
               </li>
             </ul>
           </div>
