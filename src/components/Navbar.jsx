@@ -15,11 +15,15 @@ const Navbar = () => {
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between h-14 overflow-hidden">
+          <div>
           <img
             src={Logo}
-            className="h-auto w-[10rem] overflow-hidden"
+            className={`h-auto w-[10rem] overflow-hidden ${
+              navbar ? "hidden" : "visible"
+            } `}
             alt="logo"
           />
+          </div>
           <div className="md:hidden">
             <button
               className=" text-white rounded-md outline-none"
