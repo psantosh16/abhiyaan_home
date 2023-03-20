@@ -38,8 +38,8 @@ const App = () => {
       ></div>
 
       {/* Content */}
-      <Navbar/>
-      <Home/>
+      <Navbar />
+      <Home />
     </>
   );
 };

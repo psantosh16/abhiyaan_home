@@ -5,6 +5,7 @@ import About from "./About";
 import Logo from "../components/Logo";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ParticalBackground from "../components/ParticalBackground";
+import Gallery from "../components/Gallery/Gallery";
 
 // Importing CSS & media
 import "../index.css";
@@ -129,8 +130,8 @@ const Home = () => {
       </div>
       {/* <---------------------------------------------> */}
       {/* Other Pages */}
-      <div className=" w-screen" id="about">
-        <About />
+      <div className=" w-screen" id="gallery">
+        <Gallery />
       </div>
       <div className=" w-screen" id="about">
         <About />
