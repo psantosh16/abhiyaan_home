@@ -62,7 +62,7 @@ const Home = () => {
         y: -300,
       })
       .to(
-        "#home_main",
+        "#home",
         {
           scrollTrigger: {
             trigger: ".tt",
@@ -85,7 +85,7 @@ const Home = () => {
       <div
         className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0"
         style={style}
-        id="home_main"
+        id="home"
       >
         {/* Star Background */}
         <ParticalBackground />
@@ -129,6 +129,21 @@ const Home = () => {
       </div>
       {/* <---------------------------------------------> */}
       {/* Other Pages */}
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
       <div className=" w-screen" id="about">
         <About />
       </div>
