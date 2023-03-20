@@ -132,6 +132,21 @@ const Home = () => {
       <div className=" w-screen" id="about">
         <About />
       </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
     </>
   );
 };
