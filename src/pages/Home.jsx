@@ -80,7 +80,6 @@ const Home = () => {
   //? Actual render
   return (
     <>
-      {/* <---------------------------------------------> */}
       {/* Home Page */}
       <div
         className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0"
@@ -90,7 +89,6 @@ const Home = () => {
         {/* Star Background */}
         <ParticalBackground />
         <div className="overflow-hidden" id="image_wraper">
-          {/* Side-Images Start */}
           <section className="overflow-hidden scroll-smooth w-full h-screen grid grid-cols-2 content-evenly gap-28 md:gap-60 lg:gap-[20rem] pb-2 md:pb-10 lg:pb-40 p-2 relative top-0 bottom-0 left-0 right-0">
             <img
               className="lg:w-72"
@@ -129,24 +127,9 @@ const Home = () => {
       </div>
       {/* <---------------------------------------------> */}
       {/* Other Pages */}
-      <div className=" w-screen" id="about">
+      {/* <div className=" w-screen" id="about">
         <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
+      </div> */}
     </>
   );
 };
