@@ -39,7 +39,7 @@ const App = () => {
       ></div>
       
       {/* Content */}
-      <div className="flex flex-col gap-10 w-full " id="_">
+      <div className="flex flex-col w-full " >
         <div>
           <Navbar />
         </div>
