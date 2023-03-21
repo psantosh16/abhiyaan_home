@@ -5,8 +5,9 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [mobile, setMobile] = useState(false);
 
+  
   function HandelRender({ name }) {
-    if (name == "Home") {
+    if (name == "home" || name == "Home") {
       if (mobile == true) {
         return (
           <a
@@ -51,11 +52,12 @@ const Navbar = () => {
       }
     }
     checkMobile();
+    
   }, []);
 
   return (
     <nav
-      className={`w-screen top-0 fixed z-[100] h-auto   ${
+      className={`w-screen top-0 fixed z-[100] h-auto select-none  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
           : "backdrop-blur-xl rounded-b-xl bg-transpernt"
