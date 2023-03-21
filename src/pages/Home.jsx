@@ -11,13 +11,6 @@ import "../index.css";
 
 // Main function
 const Home = () => {
-  const style = {
-    background: "#000000",
-    background: " -webkit-linear-gradient(bottom,#000000,#3c1053)",
-    background: " -moz-linear-gradient(bottom,#000000,#3c1053)",
-    background: "linear-gradient(to top,#000000,#3c1053)",
-  };
-
   // Getting Reference for animation
   let strn = useRef(null);
   let astro = useRef(null);
@@ -83,7 +76,7 @@ const Home = () => {
       {/* Home Page */}
       <div
         className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0"
-        style={style}
+        
         id="home"
       >
         {/* Star Background */}
@@ -125,7 +118,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <---------------------------------------------> */}
       {/* Other Pages */}
       {/* <div className=" w-screen" id="about">
         <About />

@@ -56,3 +56,10 @@ body{
 	0%,100% {transform: translateY(10);}
 	40% {transform: translateY(-10px);}
 }
+
+#home{
+  background: #000000;
+    background:  -webkit-linear-gradient(bottom,#000000,#3c1053);
+    background:  -moz-linear-gradient(bottom,#000000,#3c1053);
+    background: linear-gradient(to top,#000000,#3c1053);
+}

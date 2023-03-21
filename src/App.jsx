@@ -9,6 +9,19 @@ import About from "./pages/About";
 const App = () => {
   // Refrencing cursor
   let curzr = useRef(null);
+   
+  window.onload = function (){showMouseCurzr()} ;
+
+  function showMouseCurzr() {
+     if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
+      curzr.style.visibility = "hidden";
+     } else {
+      curzr.style.visibility = "visible";
+      
+     }
+    
+   }
+
 
   // Animation
   useEffect(() => {
@@ -39,7 +52,7 @@ const App = () => {
       ></div>
       
       {/* Content */}
-      <div className="flex flex-col w-full " >
+      <div className="flex flex-col w-full md:space-y-8" >
         <div>
           <Navbar />
         </div>
