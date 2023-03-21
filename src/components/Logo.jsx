@@ -16,7 +16,6 @@ const Logo = () => {
     let tl = gsap.timeline({
       defaults: { duration: 2, ease: Power4.easeInOut },
     });
-    // ! Normal Animations
     gsap.to(earthImg, {
       scrollTrigger: {
         trigger: "#home_main",
@@ -35,7 +34,9 @@ const Logo = () => {
         end: "20% top",
         scrub: 0.8,
       },
-      scale: 2,
+      scale: 1.5,
+      translateY: 100,
+
       zIndex: 20,
     }).to(txt, {
       scrollTrigger: {
@@ -45,8 +46,8 @@ const Logo = () => {
         scrub: 0.8,
       },
       zIndex: 40,
-      scale: 1.6,
-      y: 150,
+      scale: 1.2,
+      translateY: 100,
     });
   });
   return (
