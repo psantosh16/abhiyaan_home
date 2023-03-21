@@ -75,7 +75,7 @@ const Home = () => {
     <>
       {/* Home Page */}
       <div
-        className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0"
+        className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0 pt-10 select-none"
         
         id="home"
       >

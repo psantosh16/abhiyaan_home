@@ -1,3 +1,4 @@
+import gsap, { Power4 } from "gsap";
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
@@ -41,6 +42,22 @@ const Navbar = () => {
   }
 
   useEffect(() => {
+    gsap.fromTo(
+      "#navbar",
+      {
+        opacity: 0 ,
+        duration:1,
+        translateY : -50,
+      },
+      {
+        duration:1,
+        delay:0.2,
+        opacity:1,
+        translateY:0,
+        ease:Power4.easeIn,
+        
+      },
+    )
     function checkMobile() {
       let width = window.innerWidth;
       let height = window.innerHeight;
@@ -57,10 +74,11 @@ const Navbar = () => {
 
   return (
     <nav
+    id="navbar"
       className={`w-screen top-0 fixed z-[100] h-auto select-none  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
-          : "backdrop-blur-xl rounded-b-xl bg-transpernt"
+          : "backdrop-blur-xl rounded-b-xl bg-[#d7d7d7]"
       }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -80,6 +98,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               {navbar ? (
+                // cross.svg
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -93,12 +112,13 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
+                // 3-bar.svg
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#000000"
                   strokeWidth={2}
                 >
                   <path
@@ -117,12 +137,24 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white overflow-hidden hover:text-blue-600">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase font-openSans ">
+              <li className=" overflow-hidden hover:text-blue-600">
                 <HandelRender name="home" />
               </li>
-              <li className="text-white overflow-hidden hover:text-blue-600">
+              <li className=" overflow-hidden hover:text-blue-600">
                 <HandelRender name="about" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="event" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="teams" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="sponsors" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="contact" />
               </li>
             </ul>
           </div>

@@ -52,7 +52,7 @@ const App = () => {
       ></div>
       
       {/* Content */}
-      <div className="flex flex-col w-full md:space-y-8" >
+      <div className="flex flex-col w-full " >
         <div>
           <Navbar />
         </div>
