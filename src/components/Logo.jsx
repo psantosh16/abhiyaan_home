@@ -18,36 +18,34 @@ const Logo = () => {
     });
     gsap.to(earthImg, {
       scrollTrigger: {
-        trigger: "#home_main",
-
-        start: "1% top",
+        trigger: "#home",
+        start: "2% top",
         end: "20% top",
-        scrub: 0.8,
+        scrub:1,
       },
       rotate: -360,
-      duration: 10,
+      duration: 4,
     });
     tl.to(earthImg, {
       scrollTrigger: {
-        trigger: "#home_main",
+        trigger: "#home",
         start: "10% top",
         end: "20% top",
-        scrub: 0.8,
+        scrub:1,
       },
-      scale: 1.5,
-      translateY: 100,
-
+      scale: 1.2,
+      translateY: 60,
       zIndex: 20,
     }).to(txt, {
       scrollTrigger: {
-        trigger: "#home_main",
+        trigger: "#home",
         start: "10% top",
         end: "20% top",
-        scrub: 0.8,
+        scrub: 1,
       },
-      zIndex: 40,
       scale: 1.2,
-      translateY: 100,
+      translateY: 60,
+      zIndex: 40,
     });
   });
   return (
@@ -61,12 +59,12 @@ const Logo = () => {
         src={LogoBg}
         alt="earth"
       ></img>
-      <img
+      <img 
         src={LogoAbhiyaan}
         ref={(el) => {
           txt = el;
         }}
-        className="overflow-hidden w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] lg:w-[40rem]  lg:h-[40rem] m-auto absolute "
+        className=" overflow-hidden w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] lg:w-[40rem]  lg:h-[40rem] m-auto absolute "
       />
     </>
   );

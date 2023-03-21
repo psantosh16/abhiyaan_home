@@ -8,7 +8,7 @@ const About = () => {
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.from([header ], {
+    gsap.from(header , {
       translateX: -100,
     });
     gsap.to([header , paragraph], {
@@ -25,17 +25,18 @@ const About = () => {
   });
 
   return (
-    <div className=" mt-10 w-screen select-none p-4" id="about">
+    // Every component should have bg-black and z-10 to get on top of particles
+    <div className=" mt-10 w-screen h-screen select-none p-4 bg-black z-10" id="about">
       <div className="w-full flex justify-center flex-col">
         <h1
-          className=" opacity-0 font-openSans text-3xl md:text-6xl"
+          className=" opacity-0 font-openSans text-3xl md:text-6xl overflow-hidden"
           ref={(e) => {
             header = e;
           }}
         >
           About <span className="hover:text-orange-600">Abhiyaan</span>
         </h1>
-        <p className="opacity-0" ref={(e)=>{paragraph=e}}>
+        <p className="opacity-0 font-poppins" ref={(e)=>{paragraph=e}}>
         Abhiyaan is a cultural extravaganza which features events ranging from
         literary skills to performing arts to stardom and glamour. Our five day
         event is the highlight to the town which attracts the attention of many
