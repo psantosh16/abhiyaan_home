@@ -42,7 +42,7 @@ const BtmImg = () => {
         ref={(el) => {
           strn = el;
         }}
-        className="w-24 md:w-44"
+        className="w-32 md:w-44"
         src="/assets/saturn.webp"
         alt="planet"
       />
@@ -50,7 +50,7 @@ const BtmImg = () => {
         ref={(el) => {
           astro = el;
         }}
-        className="w-24 md:w-44"
+        className="w-32 md:w-44"
         src="/assets/astro3.webp"
         alt="astro2"
       />

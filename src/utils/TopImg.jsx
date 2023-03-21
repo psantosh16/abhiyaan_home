@@ -9,7 +9,7 @@ const TopImg = () => {
         return (
           <img
             key={idx}
-            className="w-24 md:w-44"
+            className="w-32 md:w-44"
             src={img.link}
             alt={img.name}
             id={img.id}

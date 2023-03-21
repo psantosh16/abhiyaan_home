@@ -15,7 +15,7 @@ const Home = () => {
         id="home"
       >
         <ParticalBackground />
-        <section className="overflow-hidden w-screen h-screen grid grid-cols-[auto,_auto] justify-between content-between pt-20  absolute  top-0 left-0">
+        <section className="overflow-hidden w-screen h-screen grid grid-cols-[auto,_auto] justify-between content-between pt-20  px-4 absolute  top-0 left-0">
           <TopImg />
           <BtmImg />
         </section>

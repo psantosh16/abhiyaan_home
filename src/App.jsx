@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   let curzr = useRef(null);
@@ -50,6 +51,7 @@ const App = () => {
         </div>
         <Home />
         <About />
+        <Gallery/>
       </div>
     </>
   );
