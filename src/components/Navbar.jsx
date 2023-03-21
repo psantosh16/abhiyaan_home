@@ -78,7 +78,7 @@ const Navbar = () => {
       className={`w-screen top-0 fixed z-[100] h-auto select-none  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
-          : "backdrop-blur-xl rounded-b-xl bg-white"
+          : "backdrop-blur-xl rounded-b-xl bg-[#d7d7d7]"
       }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -137,12 +137,24 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase font-openSans ">
               <li className=" overflow-hidden hover:text-blue-600">
                 <HandelRender name="home" />
               </li>
               <li className=" overflow-hidden hover:text-blue-600">
                 <HandelRender name="about" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="event" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="teams" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="sponsors" />
+              </li>
+              <li className=" overflow-hidden hover:text-blue-600">
+                <HandelRender name="contact" />
               </li>
             </ul>
           </div>
