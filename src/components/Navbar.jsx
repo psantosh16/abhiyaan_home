@@ -2,11 +2,12 @@ import gsap, { Power4 } from "gsap";
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
+
+
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [mobile, setMobile] = useState(false);
 
-  
   function HandelRender({ name }) {
     if (name == "home" || name == "Home") {
       if (mobile == true) {
@@ -40,24 +41,45 @@ const Navbar = () => {
       }
     }
   }
+  const NavElements = () => {
+    const el = [
+      "home",
+      "about",
+      "gallery",
+      "events",
+      "teams",
+      "sponsers",
+      "contact",
+    ];
+    return (
+      <>
+        {el.map((item) => {
+          return (
+            <li key={item} className=" overflow-hidden hover:text-blue-600">
+              <HandelRender name={item} />
+            </li>
+          );
+        })}
+      </>
+    );
+  };
 
   useEffect(() => {
     gsap.fromTo(
       "#navbar",
       {
-        opacity: 0 ,
-        duration:1,
-        translateY : -50,
+        opacity: 0,
+        duration: 1,
+        translateY: -50,
       },
       {
-        duration:1,
-        delay:0.2,
-        opacity:1,
-        translateY:0,
-        ease:Power4.easeIn,
-        
-      },
-    )
+        duration: 1,
+        delay: 0.2,
+        opacity: 1,
+        translateY: 0,
+        ease: Power4.easeIn,
+      }
+    );
     function checkMobile() {
       let width = window.innerWidth;
       let height = window.innerHeight;
@@ -69,12 +91,11 @@ const Navbar = () => {
       }
     }
     checkMobile();
-    
   }, []);
 
   return (
     <nav
-    id="navbar"
+      id="navbar"
       className={`w-screen top-0 fixed z-[100] h-auto select-none  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
@@ -137,25 +158,9 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
+
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase font-openSans ">
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="home" />
-              </li>
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="about" />
-              </li>
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="event" />
-              </li>
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="teams" />
-              </li>
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="sponsors" />
-              </li>
-              <li className=" overflow-hidden hover:text-blue-600">
-                <HandelRender name="contact" />
-              </li>
+              <NavElements/>
             </ul>
           </div>
         </div>
