@@ -18,7 +18,7 @@ const ParticalBackground = () => {
 
   return (
     <Particles
-    className="z-[-1] w-screen"
+      className="z-[-1] w-screen"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

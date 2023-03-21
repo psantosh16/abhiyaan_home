@@ -7,41 +7,42 @@ const BtmImg = () => {
   let astro = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
+ 
   useEffect(() => {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     let tl = gsap.timeline({
       defaults: { duration: 2, ease: Power4.easeInOut },
     });
     tl.to(strn, {
       scrollTrigger: {
-        start: "10% top",
-        end: "15% top",
-        scrub: 0.8,
-        markers: true,
-      },
-      zIndex: 40,
-      scale: 1.2,
-      y: -300,
-      delay: 10,
-      x: 760,
-    }).to(astro, {
-      scrollTrigger: {
-        start: "10% top",
-        end: "15% top",
+        start: "1% top",
+        end: "10% top",
         scrub: 1,
       },
       zIndex: 40,
-      scale: 1.2,
-      x: -760,
-      y: -300,
+      scale: 10,
+      y:- height,
+      x: 10 * width
+    }).to(astro, {
+      scrollTrigger: {
+        start: "1% top",
+        end: "10% top",
+        scrub: 1,
+      },
+      zIndex: 40,
+      scale: 10,
+      y: -height,
+      x: -10 * width
     });
-  });
+  },[]);
   return (
     <>
       <img
         ref={(el) => {
           strn = el;
         }}
-        className="w-32"
+        className="w-24 md:w-44"
         src="/assets/saturn.webp"
         alt="planet"
       />
@@ -49,7 +50,7 @@ const BtmImg = () => {
         ref={(el) => {
           astro = el;
         }}
-        className="w-32"
+        className="w-24 md:w-44"
         src="/assets/astro3.webp"
         alt="astro2"
       />

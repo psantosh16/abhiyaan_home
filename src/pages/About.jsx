@@ -8,7 +8,7 @@ const About = () => {
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.from([header ], {
+    gsap.from(header , {
       translateX: -100,
     });
     gsap.to([header , paragraph], {
@@ -25,10 +25,11 @@ const About = () => {
   });
 
   return (
-    <div className=" mt-10 w-screen select-none p-4" id="about">
+    // Every component should have bg-black and z-10 to get on top of particles
+    <div className=" mt-10 w-screen select-none p-4 bg-black z-10" id="about">
       <div className="w-full flex justify-center flex-col">
         <h1
-          className=" opacity-0 font-openSans text-3xl md:text-6xl"
+          className=" opacity-0 font-openSans text-3xl md:text-6xl overflow-hidden"
           ref={(e) => {
             header = e;
           }}
