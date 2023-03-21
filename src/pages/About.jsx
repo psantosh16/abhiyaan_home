@@ -17,7 +17,6 @@ const About = () => {
         start: "-20% center",
         end: "-10% center",
         scrub: 1,
-        markers: true,
       },
       opacity: 1,
       translateX: 0,
