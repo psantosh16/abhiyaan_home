@@ -2,8 +2,6 @@ import gsap, { Power4 } from "gsap";
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
-
-
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -55,7 +53,7 @@ const Navbar = () => {
       <>
         {el.map((item) => {
           return (
-            <li key={item} className=" overflow-hidden hover:text-blue-600">
+            <li key={item} className="overflow-hidden hover:text-blue-600">
               <HandelRender name={item} />
             </li>
           );
@@ -158,9 +156,8 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
-
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase font-openSans ">
-              <NavElements/>
+              <NavElements />
             </ul>
           </div>
         </div>
