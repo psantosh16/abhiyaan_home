@@ -1,7 +1,7 @@
 const TopImg = () => {
   const images = [
-    { name: "astro1", link: "/assets/astro1.png", id: "animate" },
-    { name: "satellite", link: "/assets/satellite.webp", id: "animate2" },
+    { name: "astro1", link: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=", id: "animate" },
+    { name: "satellite", link: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=", id: "animate2" },
   ];
   return (
     <>
