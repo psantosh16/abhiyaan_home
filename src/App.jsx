@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import YearsPage from "./Gallery/src/components/YearsPage";
+import YearsPage from "./Gallery/components/YearsPage";
 
 const App = () => {
   return (

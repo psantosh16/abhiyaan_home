@@ -12,7 +12,7 @@ export default function YearsPage() {
     <div className="image-container" style={{ margin: "15px" }}>
       <span>
         <img
-          src="src/Gallery/public/cancel.png"
+          src="/Gallery-images/cancel.png"
           alt=""
           onClick={() => navigate(-1)}
           className="cancel-button"

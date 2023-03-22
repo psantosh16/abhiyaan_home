@@ -35,6 +35,8 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 90;
+  background-color: black;
+  width: 100vw;
 }
 
 .media-scroller {

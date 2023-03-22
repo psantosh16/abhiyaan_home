@@ -8,7 +8,7 @@ import React, { useEffect, useRef } from "react";
 
 import Navbar from "../components/Navbar";
 import About from "./About";
-import Gallery from "../Gallery/src/components/Gallery";
+import Gallery from "../Gallery/components/Gallery";
 
 const Home = () => {
   let curzr = useRef(null);
@@ -29,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     let mouseX;
     let mouseY;
-    gsap.set(curzr, { xPercent: -50, yPercent: -50 });
+    gsap.set(curzr, { xPercent: -20, yPercent: -20 });
 
     window.addEventListener("mousemove", (e) => {
       mouseX = e.clientX;
