@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-const MarqueeText = ({text , symbol , direc}) => {
+const MarqueeText = ({ text, symbol, direc }) => {
   return (
     <>
       <Marquee
@@ -11,7 +11,8 @@ const MarqueeText = ({text , symbol , direc}) => {
         loop={0}
         className=" text-4xl font-bold md:text-8xl overflow-hidden bg-white text-black uppercase "
       >
-        {" "} {symbol} {text} {symbol} {text} {symbol} {text} {symbol} {text} {" "}
+        {" "}
+        {symbol} {text} {symbol} {text} {symbol} {text} {symbol} {text}{" "}
       </Marquee>
     </>
   );
