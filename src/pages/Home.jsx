@@ -2,6 +2,7 @@ import BtmImg from "../utils/BtmImg";
 import TopImg from "../utils/TopImg";
 import Logo from "../components/Logo";
 import ParticalBackground from "../components/ParticalBackground";
+import Gallery from "../components/Gallery/Gallery";
 import "../index.css";
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
@@ -64,26 +65,8 @@ const Home = () => {
             <Logo />
           </div>
         </div>
-      </div>
-      {/* <---------------------------------------------> */}
-      {/* Other Pages */}
-      <div className=" w-screen" id="about">
         <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
-      </div>
-      <div className=" w-screen" id="about">
-        <About />
+        <Gallery />
       </div>
     </>
   );
