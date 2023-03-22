@@ -11,9 +11,15 @@ This will clone current remote `master` repo in your local enviornment.
 In order to work on a repository, this is the workflow GitHub recommends:
 
 1.Create a branch
+
 2.Make changes 
+
 3.Add changes
+
 4.Commit code
+
 5.Create a pull request
+
 6.Address review comments
+
 7.Merge your pull request
