@@ -64,8 +64,26 @@ const Home = () => {
             <Logo />
           </div>
         </div>
+      </div>
+      {/* <---------------------------------------------> */}
+      {/* Other Pages */}
+      <div className=" w-screen" id="about">
         <About />
-        <Gallery />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
+      </div>
+      <div className=" w-screen" id="about">
+        <About />
       </div>
     </>
   );
