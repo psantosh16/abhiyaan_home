@@ -10,7 +10,7 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="media-container">
+      <div className="media-container" id="gallery">
         <div className="media-scroller">
           {Years.map((year, i) => {
             return (
