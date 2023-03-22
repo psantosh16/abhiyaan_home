@@ -55,7 +55,7 @@ const Logo = () => {
           earthImg = el;
         }}
         id="earth_image"
-        className="overflow-hidden m-auto "
+        className="overflow-hidden m-auto lg:w-[36rem] lg:h-[36rem] "
         src={LogoBg}
         alt="earth"
       ></img>
