@@ -30,9 +30,9 @@ const BtmImg = () => {
         end: "10% top",
         scrub: 1,
       },
-      zIndex: 40,
+      zIndex: 10,
       scale: 10,
-      y: -height,
+      y: -height*10,
       x: -10 * width
     });
   },[]);
@@ -43,7 +43,7 @@ const BtmImg = () => {
           strn = el;
         }}
         className="w-32 md:w-44"
-        src="/assets/saturn.webp"
+        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
         alt="planet"
       />
       <img
