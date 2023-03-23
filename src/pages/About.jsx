@@ -26,10 +26,10 @@ const About = () => {
 
   return (
     // Every component should have bg-black and z-10 to get on top of particles
-    <div className=" mt-10 w-screen h-screen select-none p-4 bg-black z-10" id="about">
+    <div className=" mt-10 w-screen h-auto select-none px-20 py-44 bg-black z-10" id="about">
       <div className="w-full flex justify-center flex-col">
         <h1
-          className=" opacity-0 font-openSans text-3xl md:text-6xl overflow-hidden"
+          className=" opacity-0 font-openSans text-3xl md:text-6xl py-10 overflow-hidden"
           ref={(e) => {
             header = e;
           }}
