@@ -8,7 +8,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import About from "./About";
 import Gallery from "../Gallery/components/Gallery";
-// import Sponsers from "../pages/"
+import Sponsers from "../components/Sponsers";
+import Event from "./Events/Event";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
           </div>
         </div>
         <About />
+        <Event />
         <Gallery />
         <Sponsers />
       </div>
