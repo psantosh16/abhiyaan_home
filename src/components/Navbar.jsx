@@ -63,21 +63,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // gsap.fromTo(
-    //   "#navbar",
-    //   {
-    //     opacity: 0,
-    //     duration: 1,
-    //     translateY: -50,
-    //   },
-    //   {
-    //     duration: 1,
-    //     delay: 0.2,
-    //     opacity: 1,
-    //     translateY: 0,
-    //     ease: Power4.easeIn,
-    //   }
-    // );
     function checkMobile() {
       let width = window.innerWidth;
       let height = window.innerHeight;
@@ -103,13 +88,15 @@ const Navbar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div className="flex items-center justify-between h-14 overflow-hidden">
           <div>
-            <img
-              src={Logo}
-              className={`h-auto w-[10rem] overflow-hidden ${
-                navbar ? "hidden" : "visible"
-              } `}
-              alt="logo"
-            />
+            <a href="/">
+              <img
+                src={Logo}
+                className={`h-auto w-[10rem] overflow-hidden ${
+                  navbar ? "hidden" : "visible"
+                } `}
+                alt="logo"
+              />
+            </a>
           </div>
           <div className="md:hidden">
             <button
@@ -137,7 +124,7 @@ const Navbar = () => {
                   className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeWidth={2}
                 >
                   <path
