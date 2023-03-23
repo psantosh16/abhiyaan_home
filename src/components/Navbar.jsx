@@ -63,21 +63,21 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    gsap.fromTo(
-      "#navbar",
-      {
-        opacity: 0,
-        duration: 1,
-        translateY: -50,
-      },
-      {
-        duration: 1,
-        delay: 0.2,
-        opacity: 1,
-        translateY: 0,
-        ease: Power4.easeIn,
-      }
-    );
+    // gsap.fromTo(
+    //   "#navbar",
+    //   {
+    //     opacity: 0,
+    //     duration: 1,
+    //     translateY: -50,
+    //   },
+    //   {
+    //     duration: 1,
+    //     delay: 0.2,
+    //     opacity: 1,
+    //     translateY: 0,
+    //     ease: Power4.easeIn,
+    //   }
+    // );
     function checkMobile() {
       let width = window.innerWidth;
       let height = window.innerHeight;
@@ -97,7 +97,7 @@ const Navbar = () => {
       className={`w-screen top-0 fixed z-[100] h-auto select-none py-2  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
-          : "backdrop-blur-2xl  bg-transparent"
+          : "backdrop-blur-2xl  bg-[rgba(255,_255,_255,_0.05)]"
       }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
