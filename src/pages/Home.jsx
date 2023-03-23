@@ -9,43 +9,44 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import About from "./About";
 import Gallery from "../Gallery/components/Gallery";
+import Events from "./Events/Events";
 
 const Home = () => {
-  let curzr = useRef(null);
+  // let curzr = useRef(null);
 
-  window.onload = function () {
-    showMouseCurzr();
-  };
+  // window.onload = function () {
+  //   showMouseCurzr();
+  // };
 
-  function showMouseCurzr() {
-    if (window.innerWidth < 1024 && window.innerHeight > window.innerWidth) {
-      curzr.style.visibility = "hidden";
-    } else {
-      curzr.style.visibility = "visible";
-    }
-  }
+  // function showMouseCurzr() {
+  //   if (window.innerWidth < 1024 && window.innerHeight > window.innerWidth) {
+  //     curzr.style.visibility = "hidden";
+  //   } else {
+  //     curzr.style.visibility = "visible";
+  //   }
+  // }
 
-  // Animation
-  useEffect(() => {
-    let mouseX;
-    let mouseY;
-    gsap.set(curzr, { xPercent: -20, yPercent: -20 });
+  // // Animation
+  // useEffect(() => {
+  //   let mouseX;
+  //   let mouseY;
+  //   gsap.set(curzr, { xPercent: -20, yPercent: -20 });
 
-    window.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      gsap.to(curzr, { x: mouseX, y: mouseY });
-    });
-  }, []);
+  //   window.addEventListener("mousemove", (e) => {
+  //     mouseX = e.clientX;
+  //     mouseY = e.clientY;
+  //     gsap.to(curzr, { x: mouseX, y: mouseY });
+  //   });
+  // }, []);
   return (
     <>
-      <div
+      {/* <div
         ref={(el) => {
           curzr = el;
         }}
         id="curzr"
         className="fixed bg-white bg-opacity-100 left-0 cursor-pointer  rounded-[50%] pointer-events-none top-0 w-[20px] h-[20px] z-[80000] "
-      ></div>
+      ></div> */}
 
       <div className="flex flex-col w-full ">
         <div>
@@ -66,6 +67,7 @@ const Home = () => {
         </div>
         <About />
         <Gallery />
+        <Events />
       </div>
     </>
   );
