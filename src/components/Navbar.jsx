@@ -63,21 +63,21 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    gsap.fromTo(
-      "#navbar",
-      {
-        opacity: 0,
-        duration: 1,
-        translateY: -50,
-      },
-      {
-        duration: 1,
-        delay: 0.2,
-        opacity: 1,
-        translateY: 0,
-        ease: Power4.easeIn,
-      }
-    );
+    // gsap.fromTo(
+    //   "#navbar",
+    //   {
+    //     opacity: 0,
+    //     duration: 1,
+    //     translateY: -50,
+    //   },
+    //   {
+    //     duration: 1,
+    //     delay: 0.2,
+    //     opacity: 1,
+    //     translateY: 0,
+    //     ease: Power4.easeIn,
+    //   }
+    // );
     function checkMobile() {
       let width = window.innerWidth;
       let height = window.innerHeight;
@@ -94,10 +94,10 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`w-screen top-0 fixed z-[100] h-auto select-none  ${
+      className={`w-screen top-0 fixed z-[100] h-auto select-none py-2  ${
         navbar
           ? "backdrop-blur-none bg-black h-screen"
-          : "backdrop-blur-xl rounded-b-xl bg-[#d7d7d7]"
+          : "backdrop-blur-2xl  bg-[rgba(255,_255,_255,_0.05)]"
       }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -156,7 +156,7 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-black uppercase font-openSans ">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-white capitalize font-openSans ">
               <NavElements />
             </ul>
           </div>
