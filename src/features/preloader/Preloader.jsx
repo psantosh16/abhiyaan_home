@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+
+import "./Preloader.scss";
 
 const Preloader = () => {
   return (
-    <div>Preloader</div>
-  )
-}
+    <div className="demo">
+      <div className="rings">
+        <div className="rings">
+          <div className="logo"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Preloader
+export default Preloader;

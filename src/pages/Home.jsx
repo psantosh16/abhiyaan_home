@@ -3,14 +3,12 @@ import TopImg from "../utils/TopImg";
 import Logo from "../components/Logo";
 import ParticalBackground from "../components/ParticalBackground";
 import "../index.css";
-import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 import Navbar from "../components/Navbar";
 import About from "./About";
 import Gallery from "../Gallery/components/Gallery";
 import Sponsers from "../components/Sponsers";
-import Event from "./Event/Event";
 
 const Home = () => {
   return (
@@ -33,7 +31,6 @@ const Home = () => {
           </div>
         </div>
         <About />
-        <Event />
         <Gallery />
         <Sponsers />
       </div>
