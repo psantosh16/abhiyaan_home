@@ -39,7 +39,7 @@ after making changes run to check
 
 `git commit -m " <message/info about changes> "`
 
-`git push -u <your branch name>`
+`git push -u origin <your branch name>`
 
 5.Create a pull request
 

@@ -49,8 +49,13 @@ const Sponsers = () => {
               key={sp.id}
               className="w-auto  h-auto  hover:scale-105 p-12  md:p-0 lg:p-3"
             >
-              <a href={sp.link} target="_blank">
-                <img src={sp.img} className="w-auto h-auto " alt={sp.name} />
+              <a href={sp.link}>
+                <img
+                  src={sp.img}
+                  loading="lazy"
+                  className="w-auto h-auto "
+                  alt={sp.name}
+                />
               </a>
             </div>
           );
