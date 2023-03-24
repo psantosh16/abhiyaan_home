@@ -3,8 +3,7 @@ import TopImg from "../utils/TopImg";
 import Logo from "../components/Logo";
 import ParticalBackground from "../components/ParticalBackground";
 import "../index.css";
-import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 import Navbar from "../components/Navbar";
 import About from "./About";
@@ -14,7 +13,6 @@ import Sponsers from "../components/Sponsers";
 const Home = () => {
   return (
     <>
-
       <div className="flex flex-col w-full ">
         <div>
           <Navbar />
@@ -34,7 +32,7 @@ const Home = () => {
         </div>
         <About />
         <Gallery />
-        <Sponsers/>
+        <Sponsers />
       </div>
     </>
   );
