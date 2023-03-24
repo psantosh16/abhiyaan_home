@@ -35,7 +35,7 @@ const Events = () => {
       <div className="event-image-container">
         {poster.map((p, i) => {
           return (
-            <div key={i}>
+            <div key={i} className="event-item">
               <img src={p.link} alt="" onClick={onClickHandler} />
             </div>
           );

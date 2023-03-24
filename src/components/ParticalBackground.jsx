@@ -5,7 +5,7 @@ import particalConfig from "../configs/partical-config";
 
 const ParticalBackground = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -13,7 +13,7 @@ const ParticalBackground = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    // console.log(container);
   }, []);
 
   return (

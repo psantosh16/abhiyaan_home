@@ -9,8 +9,10 @@ export default function Gallery() {
   const navigate = useNavigate();
 
   function clickHandler() {
-    if (window.innerWidth > 768) navigate("/years");
-    window.scrollTo(0, 0);
+    if (window.innerWidth > 768) {
+      navigate("/years");
+      window.scrollTo(0, 0);
+    }
   }
 
   return (
@@ -30,7 +32,10 @@ export default function Gallery() {
                 <button
                   className="button-54"
                   role="button"
-                  onClick={() => navigate("/years")}
+                  onClick={() => {
+                    navigate("/years");
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   View More
                 </button>
