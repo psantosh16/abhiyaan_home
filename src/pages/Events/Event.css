@@ -1,0 +1,81 @@
+#secrete {
+  display: none;
+  height: 38em;
+  width: 38em;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#secrete>.secrete-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.event-heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.event-image-container {
+  background: black;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  gap: 3vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.event-image-container>.image>img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+.event-item {
+  padding: 1rem;
+
+}
+
+.event-item:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #secrete {
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .event-item {
+    padding: .5rem;
+  }
+
+  .event-image-container {
+    padding: 1em;
+  }
+}

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Sponsers = () => {
   const sponsers = [
     {
@@ -50,7 +52,7 @@ const Sponsers = () => {
               <a href={sp.link}>
                 <img
                   src={sp.img}
-                  loading="eager"
+                  loading="lazy"
                   className="w-auto h-auto "
                   alt={sp.name}
                 />

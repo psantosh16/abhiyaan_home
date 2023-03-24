@@ -8,6 +8,13 @@ import Data from "../models/EventData";
 export default function Gallery() {
   const navigate = useNavigate();
 
+  function clickHandler() {
+    if (window.innerWidth > 768) {
+      navigate("/years");
+      window.scrollTo(0, 0);
+    }
+  }
+
   return (
     <>
       <div className="media-container" id="gallery">
@@ -16,7 +23,7 @@ export default function Gallery() {
             return (
               <div
                 className="media-element"
-                onClick={() => window.innerWidth > 768 && navigate("/years")}
+                onClick={() => clickHandler()}
                 style={{ backgroundImage: `url(${year[i]})` }}
                 key={i}
               >
@@ -25,7 +32,10 @@ export default function Gallery() {
                 <button
                   className="button-54"
                   role="button"
-                  onClick={() => navigate("/years")}
+                  onClick={() => {
+                    navigate("/years");
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   View More
                 </button>

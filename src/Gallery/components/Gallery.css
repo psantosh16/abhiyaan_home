@@ -1,3 +1,34 @@
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  /*To prevent text selection */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* To prevent image drag */
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+}
+
 .media-container {
   padding: 15vh 0;
   display: flex;
@@ -15,7 +46,7 @@
 }
 
 .media-element {
-  width: 10vw;
+  width: 12vw;
   height: 70vh;
   color: white;
   background-size: cover;
@@ -23,6 +54,7 @@
   transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .media-element:hover {
@@ -222,6 +254,7 @@
   z-index: 100;
   cursor: pointer;
   background: transparent;
+  filter: invert(1);
 }
 
 img {
