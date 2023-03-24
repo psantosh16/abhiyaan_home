@@ -2,8 +2,8 @@ import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Home = React.lazy(() => waitFor(5000).then(() => import("./pages/Home")));
-import YearsPage from "./Gallery/components/YearsPage";
-import Preloader from "./features/preloader/Preloader";
+const YearsPage = React.lazy(() => import("./Gallery/components/YearsPage"));
+const Preloader = React.lazy(() => import("./features/preloader/Preloader"));
 
 const App = () => {
   return (
