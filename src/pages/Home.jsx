@@ -10,11 +10,11 @@ import Navbar from "../components/Navbar";
 import About from "./About";
 import Gallery from "../Gallery/components/Gallery";
 import Sponsers from "../components/Sponsers";
+import Event from "./Event/Event";
 
 const Home = () => {
   return (
     <>
-
       <div className="flex flex-col w-full ">
         <div>
           <Navbar />
@@ -33,8 +33,9 @@ const Home = () => {
           </div>
         </div>
         <About />
+        <Event />
         <Gallery />
-        <Sponsers/>
+        <Sponsers />
       </div>
     </>
   );
