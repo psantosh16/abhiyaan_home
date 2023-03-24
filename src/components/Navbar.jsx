@@ -1,4 +1,3 @@
-import gsap, { Power4 } from "gsap";
 import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 
@@ -53,7 +52,7 @@ const Navbar = () => {
       <>
         {el.map((item) => {
           return (
-            <li key={item} className="overflow-hidden hover:text-blue-600">
+            <li key={item} className="overflow-hidden hover:text-orange-500">
               <HandelRender name={item} />
             </li>
           );
@@ -79,13 +78,13 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`w-screen top-0 fixed z-[100] h-auto select-none py-2  ${
+      className={`w-screen top-0 fixed z-[100] md:h-[10vh] h-auto select-none  ${
         navbar
-          ? "backdrop-blur-none bg-black h-screen"
-          : "backdrop-blur-2xl  bg-[rgba(255,_255,_255,_0.05)]"
+          ? "backdrop-blur-[1rem]  bg-[rgba(0%,_0%,_0%,_0.75)] h-screen"
+          : "backdrop-blur-[0.5rem]  bg-[hsl(0,_0%,_100%,_/,_0.1)]"
       }`}
     >
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 items-center h-full">
         <div className="flex items-center justify-between h-14 overflow-hidden">
           <div>
             <a href="/">
@@ -143,7 +142,7 @@ const Navbar = () => {
               navbar ? "block text-4xl" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-white capitalize font-openSans ">
+            <ul className="items-center justify-center text-center space-y-8 md:flex md:space-x-6 md:space-y-0 md:text-white capitalize font-openSans ">
               <NavElements />
             </ul>
           </div>

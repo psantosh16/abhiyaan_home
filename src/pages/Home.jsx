@@ -18,7 +18,7 @@ const Home = () => {
           <Navbar />
         </div>
         <div
-          className=" overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0 py-10 px-2 select-none"
+          className="overflow-hidden bg-no-repeat bg-cover z-10 w-full h-screen relative top-0 left-0 py-10 px-2 select-none"
           id="home"
         >
           <ParticalBackground />

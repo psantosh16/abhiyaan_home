@@ -1,17 +1,18 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap, { Power4 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LogoAbhiyaan from "../assets/logo.png";
 import LogoBg from "../assets/logobg.png";
+// const LogoBg = React.Children;
 
 const Logo = () => {
   // Getting Reference for animation
   let earthImg = useRef(null);
   let txt = useRef(null);
 
- // Registring Plugins
+  // Registring Plugins
 
- gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     let tl = gsap.timeline({
       defaults: { duration: 2, ease: Power4.easeInOut },
@@ -21,7 +22,7 @@ const Logo = () => {
         trigger: "#home",
         start: "2% top",
         end: "20% top",
-        scrub:1,
+        scrub: 1,
       },
       rotate: -360,
       duration: 4,
@@ -31,7 +32,7 @@ const Logo = () => {
         trigger: "#home",
         start: "10% top",
         end: "20% top",
-        scrub:1,
+        scrub: 1,
       },
       scale: 1.2,
       translateY: 60,
@@ -57,9 +58,10 @@ const Logo = () => {
         id="earth_image"
         className="overflow-hidden m-auto lg:w-[36rem] lg:h-[36rem] "
         src={LogoBg}
+        loading="lazy"
         alt="earth"
       ></img>
-      <img 
+      <img
         src={LogoAbhiyaan}
         ref={(el) => {
           txt = el;

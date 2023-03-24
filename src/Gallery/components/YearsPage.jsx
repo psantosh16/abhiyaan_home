@@ -25,7 +25,7 @@ export default function YearsPage() {
               key={i}
               className={`img-co ${arr[Math.floor(Math.random() * 3)]}`}
             >
-              <img src={photo.src} alt="" />
+              <img src={photo.src} loading="lazy" alt="" />
             </div>
           );
         })}
