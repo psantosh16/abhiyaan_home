@@ -10,6 +10,7 @@ import About from "./About";
 import Gallery from "../Gallery/components/Gallery";
 import Sponsers from "../components/Sponsers";
 import Event from "./Events/Event";
+import Map from "../components/Map";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
         <Event />
         <Gallery />
         <Sponsers />
+        <Map/>
       </div>
     </>
   );

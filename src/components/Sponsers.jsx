@@ -42,7 +42,7 @@ const Sponsers = () => {
       <div className="text-white  text-5xl md:text-6xl font-openSans mb-4 overflow-hidden text-center">
         <h1 className="overflow-hidden  hover:text-orange-500">Our Sponsers</h1>
       </div>
-      <div className="bg-black grid grid-cols-1 md:grid-cols-5 md:p-2 p-20 lg:p-32 items-center justify-items-center md:gap-20 gap-20 lg:gap-10">
+      <div className="bg-black grid grid-cols-1 md:grid-cols-5 md:p-2 p-20 lg:p-32 items-center justify-items-center md:gap-10 gap-20 lg:gap-10">
         {sponsers.map((sp) => {
           return (
             <div

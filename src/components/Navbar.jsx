@@ -42,11 +42,12 @@ const Navbar = () => {
     const el = [
       "home",
       "about",
-      "gallery",
       "events",
+      "gallery",
       "teams",
       "sponsers",
       "contact",
+      "locate us",
     ];
     return (
       <>
