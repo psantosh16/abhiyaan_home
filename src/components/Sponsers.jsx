@@ -37,17 +37,17 @@ const Sponsers = () => {
   return (
     <div
       id="sponsers"
-      className="w-screen h-auto bg-black px-4 py-10 z-50 select-none"
+      className="w-screen h-auto bg-black px-4 pt-20 z-50 select-none"
     >
       <div className="text-white  text-5xl md:text-6xl font-openSans mb-4 overflow-hidden text-center">
         <h1 className="overflow-hidden  hover:text-orange-500">Our Sponsers</h1>
       </div>
-      <div className="bg-black grid grid-cols-1 md:grid-cols-5 md:p-2 p-20 lg:p-32 items-center justify-items-center md:gap-10 gap-20 lg:gap-10">
+      <div className="bg-black grid grid-cols-1 md:grid-cols-5 md:p-2 p-16 lg:p-32 items-center justify-items-center md:gap-10 gap-2 lg:gap-10">
         {sponsers.map((sp) => {
           return (
             <div
               key={sp.id}
-              className="w-auto  h-auto  hover:scale-105 p-12  md:p-0 lg:p-3"
+              className="w-auto  h-auto  hover:scale-105 hover:ease-in-out p-12  md:p-0 lg:p-3"
             >
               <a href={sp.link}>
                 <img
