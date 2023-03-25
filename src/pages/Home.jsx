@@ -12,6 +12,7 @@ import Sponsers from "../components/Sponsers";
 import Event from "./Events/Event";
 import Map from "../components/Map";
 import Contact from "./Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
         <Sponsers />
         <Contact/>
         <Map/>
-        
+        <Footer/>
       </div>
     </>
   );
