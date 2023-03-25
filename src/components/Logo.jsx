@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import gsap, { Power4 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import LogoAbhiyaan from "../assets/logo.png";
-import LogoBg from "../assets/logobg.png";
+import LogoAbhiyaan from "../assets/logo.webp";
+import LogoBg from "../assets/logobg.webp";
 // const LogoBg = React.Children;
 
 const Logo = () => {
@@ -56,7 +56,7 @@ const Logo = () => {
           earthImg = el;
         }}
         id="earth_image"
-        className="overflow-hidden m-auto lg:w-[36rem] lg:h-[36rem] "
+        className="overflow-hidden m-auto lg:w-[36rem] lg:h-[36rem] z-20"
         src={LogoBg}
         loading="lazy"
         alt="earth"
@@ -66,7 +66,7 @@ const Logo = () => {
         ref={(el) => {
           txt = el;
         }}
-        className=" overflow-hidden w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] lg:w-[40rem]  lg:h-[40rem] m-auto absolute "
+        className=" overflow-hidden w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] lg:w-[40rem]  lg:h-[40rem] m-auto absolute z-20"
       />
     </>
   );
