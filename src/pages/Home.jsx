@@ -11,6 +11,7 @@ import Gallery from "../Gallery/components/Gallery";
 import Sponsers from "../components/Sponsers";
 import Event from "./Events/Event";
 import Map from "../components/Map";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -36,7 +37,9 @@ const Home = () => {
         <Event />
         <Gallery />
         <Sponsers />
+        <Contact/>
         <Map/>
+        
       </div>
     </>
   );

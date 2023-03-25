@@ -41,7 +41,7 @@ const About = () => {
       </video>
       <div className="w-full h-full md-pb-0  lg:px-40   pb-7 absolute  top-0 px-4 text-white  flex justify-center flex-col" style={style}>
         <h1
-          className=" opacity-0 font-openSans text-3xl md:text-6xl  md:py-0 py-4 overflow-hidden"
+          className=" opacity-0 font-openSans text-5xl md:text-6xl  md:py-0 py-4 overflow-hidden"
           ref={(e) => {
             header = e;
           }}

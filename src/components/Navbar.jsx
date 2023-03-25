@@ -46,8 +46,7 @@ const Navbar = () => {
       "gallery",
       "teams",
       "sponsers",
-      "contact",
-      "locate us",
+      "contact"
     ];
     return (
       <>
