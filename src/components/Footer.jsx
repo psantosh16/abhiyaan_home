@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 const Footer = () => {
@@ -58,10 +59,13 @@ const Footer = () => {
         <p>Copyright © BVCOE, Navi Mumbai | All rights reserved</p>
         <h1>
           Designed And Developed By
-          <a href="" className="text-orange-600 hover:underline font-semibold">
+          <Link
+            to="/web-team"
+            className="text-orange-600 hover:underline font-semibold"
+          >
             {" "}
             Web Development Committee
-          </a>
+          </Link>
         </h1>
       </div>
     </div>

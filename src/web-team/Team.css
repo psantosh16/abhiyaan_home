@@ -1,0 +1,1017 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+} */
+
+header::before {
+  position: fixed;
+  content: "";
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* -------------------------------------- TITLE -------------------------------------- */
+
+.title {
+  text-shadow: 0px 0px 100px rgb(0, 255, 221), 0px 0px 1000px rgb(204, 0, 255);
+  background: linear-gradient(to left, #00ffcc, #dd56ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  z-index: 200;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 3.5rem;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+.a {
+  position: fixed;
+  /* top: 20px; */
+  background: linear-gradient(135deg, rgba(85, 85, 85, 0.1), rgba(255, 255, 255, 0));
+  /* filtr: blur(0px); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 130px;
+  z-index: 100;
+}
+
+/* ------------------------------------ CARDS -------------------------------------- */
+
+.container {
+  min-width: 100vw;
+
+}
+
+.firstCard {
+  padding-top: 25vh;
+}
+
+.profile {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 400px;
+  margin: -9vh auto 10vh;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.outerboxes {
+  width: 310px;
+  height: 310px;
+  border-radius: 240px;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  box-shadow: 0px 2px 15px -8px rgb(199, 92, 252), 0px -2px 15px -8px rgb(76, 243, 207);
+  transition: all 0.8s ease-out;
+}
+
+.middleboxes {
+  width: 175px;
+  height: 175px;
+  border-radius: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  border: 1.5px solid white;
+  z-index: 1;
+  /* transition: 0.8s ease-out; */
+}
+
+.innerboxes {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(155, 66, 66, 0);
+  margin: auto;
+  /* border: 1px solid white; */
+  z-index: 1;
+  /* box-shadow: 0px 5px 40px -10px rgb(187, 54, 253), 0px -6px 40px -10px rgb(53, 226, 189); */
+  transition: 0.45s ease-out;
+}
+
+.links {
+  width: 40px;
+  z-index: 1;
+  transition: ease-in-out 0.3s;
+}
+
+.links:hover {
+  cursor: pointer;
+  filter: grayscale(1);
+
+  scale: 1.08;
+}
+
+#instagramLink {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+#linkedinLink {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
+}
+
+#githubLink-2 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-125%, -50%);
+}
+
+#portfolioLink {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+}
+
+.outerboxes:hover .innerboxes {
+  width: 100%;
+  height: 100%;
+  border-radius: 240px;
+}
+
+.outerboxes:hover .middleboxes {
+  animation: spread 0.6s ease-out;
+}
+
+@keyframes spread {
+  1% {
+    width: 180px;
+    height: 180px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 240px;
+    opacity: 0;
+  }
+}
+
+.boxes {
+  width: 180px;
+  height: 180px;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 120px;
+  /* margin: auto; */
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgb(3, 0, 20), rgb(33, 32, 32), rgb(61, 61, 61), rgb(129, 129, 129));
+  box-shadow: 0px 5px 30px -8px rgb(187, 54, 253), 0px -6px 30px -8px rgb(53, 226, 189);
+  transform: translate(-50%, -50%);
+
+  transition: all 0.6s ease-in-out;
+}
+
+@keyframes pic {
+  1% {
+    opacity: 1;
+  }
+
+  2% {
+    opacity: 0.5;
+  }
+
+  3% {
+    opacity: 0.5;
+  }
+
+  4% {
+    opacity: 0.5;
+
+  }
+
+  5% {
+    opacity: 1;
+
+  }
+
+  7% {
+    opacity: 0.6;
+
+  }
+
+  10% {
+    opacity: 1;
+
+  }
+
+  13% {
+    opacity: 0.5;
+
+  }
+
+  20% {
+    opacity: 1;
+
+  }
+
+}
+
+.outerboxes:hover .boxes {
+  border-radius: 130px;
+  animation: pic 4s ease-in-out;
+
+}
+
+.name {
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  width: 200px;
+
+  color: rgb(201, 255, 254);
+  text-shadow: 0px 0px 10px rgb(5, 255, 201), 0px 0px 10px rgb(234, 0, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+/* ------------------------------------- BACKGROUNG ----------------------------------------------------- */
+
+.all_icons {
+  z-index: 1;
+  width: 100vw;
+}
+
+.icons {
+  width: 3rem;
+  height: 3rem;
+  animation: zoom_in_out ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+
+
+
+/* --------------------------------------- ICONS POSITION ------------------------------------------ */
+
+#link {
+  position: absolute;
+  left: 5%;
+  top: 120rem;
+  animation-delay: 1s;
+}
+
+#swift {
+  position: absolute;
+  left: 80%;
+  top: 87rem;
+  animation-delay: 0.5s;
+}
+
+#dev2 {
+  position: absolute;
+  left: 48%;
+  top: 80rem;
+  animation-delay: 2s;
+}
+
+#figma {
+  position: absolute;
+  right: 10%;
+  top: 170rem;
+  animation-delay: 1s;
+}
+
+#react {
+  position: absolute;
+  top: 38rem;
+  left: 45%;
+  animation: spinning 2.6s linear infinite;
+}
+
+#apple {
+  position: absolute;
+  right: 10%;
+  top: 55rem;
+  animation-delay: 0s;
+}
+
+#oracle {
+  position: absolute;
+  left: 25%;
+  top: 10rem;
+  animation-delay: 1s;
+
+}
+
+#brave {
+  position: absolute;
+
+  top: 115rem;
+  left: 65%;
+  animation-delay: 0.5s;
+}
+
+#vscode {
+  position: absolute;
+  left: 50%;
+  top: 104rem;
+  animation-delay: 1.5s;
+}
+
+#css {
+  position: absolute;
+  top: 138rem;
+  left: 32%;
+  animation-delay: 1.7s;
+}
+
+#json {
+  position: absolute;
+  left: 66%;
+  top: 68rem;
+  animation-delay: 0.5s;
+}
+
+#vstudio {
+  position: absolute;
+  left: 10%;
+  top: 11rem;
+  animation-delay: 1.5s;
+}
+
+#program {
+  position: absolute;
+  left: 5%;
+  top: 78rem;
+  animation-delay: 3s;
+}
+
+#laptop {
+  position: absolute;
+  right: 10%;
+  top: 105rem;
+  animation-delay: 1.5s;
+}
+
+#api {
+  position: absolute;
+  left: 47%;
+  top: 126rem;
+  animation: spinning 3s linear infinite;
+}
+
+#angular {
+  position: absolute;
+  top: 10rem;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+#touch {
+  position: absolute;
+  right: 10%;
+  top: 35rem;
+  animation-delay: 1.2s;
+}
+
+#aorus {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  animation-delay: 3s;
+}
+
+#java {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  top: 35rem;
+  left: 10.2%;
+  animation-delay: 2s;
+}
+
+#wordpress {
+  position: absolute;
+  left: 25%;
+  top: 50rem;
+  animation-delay: 4s;
+}
+
+#python {
+  position: absolute;
+  left: 12%;
+  top: 148rem;
+  animation-delay: 1s;
+}
+
+#code {
+  position: absolute;
+  left: 46%;
+  top: 56rem;
+  animation-delay: 0.5s;
+}
+
+#security {
+  position: absolute;
+  left: 30%;
+  top: 180rem;
+  animation-delay: 2.5s;
+}
+
+#windows {
+  position: absolute;
+  left: 65%;
+  top: 160rem;
+  animation-delay: 1.5s;
+}
+
+#jscript {
+  width: 100px;
+  position: absolute;
+  left: 47%;
+  top: 172rem;
+  animation-delay: 0.5s;
+}
+
+#robot {
+  position: absolute;
+  left: 6%;
+  top: 195rem;
+  animation-delay: 5s;
+}
+
+#html {
+  position: absolute;
+  left: 6%;
+  top: 105rem;
+  animation-delay: 1.5s;
+}
+
+#github {
+  position: absolute;
+  left: 70%;
+  top: 24rem;
+  animation-delay: 0s;
+}
+
+#dropbox {
+  position: absolute;
+  right: 10%;
+  top: 135rem;
+  animation-delay: 1.3s;
+}
+
+#dev {
+  position: absolute;
+  left: 65%;
+  top: 203rem;
+  animation-delay: 0.5s;
+}
+
+#android {
+  position: absolute;
+  left: 47%;
+  top: 147rem;
+  animation-delay: 2s;
+}
+
+#database {
+  position: absolute;
+  top: 237rem;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
+#ai {
+  position: absolute;
+  left: 6%;
+  top: 170rem;
+}
+
+#express {
+  position: absolute;
+  right: 10%;
+  top: 225rem;
+  animation-delay: 1s;
+}
+
+#flask {
+  position: absolute;
+  left: 10%;
+  top: 252rem;
+  animation-delay: 2s;
+}
+
+#linkedin {
+  position: absolute;
+  top: 250rem;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+#git {
+  position: absolute;
+  top: 265rem;
+  left: 12%;
+  animation-delay: 0.5s;
+}
+
+#blender {
+  position: absolute;
+  top: 193rem;
+  left: 48%;
+  animation-delay: 1.5s;
+}
+
+#oracle {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 12%;
+  top: 80rem;
+  animation-delay: 1s;
+}
+
+#sql {
+  position: absolute;
+  left: 78%;
+  top: 290rem;
+  animation-delay: 0.5s;
+}
+
+#docker {
+  position: absolute;
+  right: 10%;
+  top: 210rem;
+  animation-delay: 0.5s;
+}
+
+#blockchain {
+  position: absolute;
+  right: 10%;
+  top: 189rem;
+  animation-delay: 1.5s;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom_in_out {
+  0% {
+    scale: 1;
+
+  }
+
+  50% {
+    scale: 1.3;
+
+  }
+
+  100% {
+    scale: 1;
+
+  }
+
+}
+
+/* ---------------------------------------- MEDIA QUERRIES -------------------------------------- */
+
+@media only screen and (max-width: 567px) {
+
+
+  #react {
+    position: absolute;
+    top: 39rem;
+    left: 75%;
+    animation: spinning 2.6s linear infinite;
+  }
+
+  #java {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 38rem;
+    left: 10.2%;
+    animation-delay: 2s;
+  }
+
+  #touch {
+    position: absolute;
+    right: 10%;
+    top: 29rem;
+    animation-delay: 1.2s;
+  }
+
+  #aorus {
+    position: absolute;
+    top: 30rem;
+    left: 13%;
+    animation-delay: 3s;
+  }
+
+  .a {
+    height: 150px;
+  }
+
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+@media only screen and (max-width: 460px) {
+  .outerboxes {
+    scale: 0.9;
+  }
+
+  .icons {
+    width: 35px;
+    height: 35px;
+    filter: blur(2px);
+  }
+
+  #security {
+    position: absolute;
+    left: 0%;
+    top: 0rem;
+    animation-delay: 2.5s;
+  }
+
+  #oracle {
+    position: absolute;
+    left: 75%;
+    top: 231rem;
+    animation-delay: 1s;
+
+  }
+
+  #docker {
+    position: absolute;
+    right: 10%;
+    top: 213rem;
+    animation-delay: 0.5s;
+  }
+
+  #dev {
+    position: absolute;
+    top: 213rem;
+    animation-delay: 2s;
+  }
+
+  #blockchain {
+    position: absolute;
+    right: 8%;
+    top: 185rem;
+    animation-delay: 1.5s;
+  }
+
+  #robot {
+    position: absolute;
+    left: 6%;
+    top: 185rem;
+  }
+
+  #jscript {
+    width: 100px;
+    position: absolute;
+    left: 70%;
+    top: 173rem;
+    animation-delay: 0.5s;
+  }
+
+  #python {
+    position: absolute;
+    left: 7%;
+    top: 156rem;
+    animation-delay: 1s;
+  }
+
+  #android {
+    position: absolute;
+    left: 7%;
+    top: 144rem;
+    animation-delay: 2s;
+  }
+
+  #css {
+    position: absolute;
+    top: 127rem;
+    left: 80%;
+    animation-delay: 1.7s;
+  }
+
+  #brave {
+    position: absolute;
+
+    top: 115rem;
+    left: 6%;
+    animation-delay: 0.5s;
+  }
+
+  #laptop {
+    position: absolute;
+    right: 10%;
+    top: 99rem;
+    animation-delay: 1.5s;
+  }
+
+  #html {
+    position: absolute;
+    left: 6%;
+    top: 99rem;
+    animation-delay: 1.5s;
+  }
+
+  #api {
+    position: absolute;
+    left: 76%;
+    top: 69rem;
+    animation: spinning 3s linear infinite;
+  }
+
+  #program {
+    position: absolute;
+    left: 6%;
+    top: 87rem;
+    animation-delay: 3s;
+  }
+
+  #apple {
+    position: absolute;
+    right: 10%;
+    top: 57.3rem;
+    animation-delay: 0s;
+  }
+
+  #dev {
+    position: absolute;
+    left: 8%;
+    /* top: 330rem; */
+  }
+
+  #figma {
+    position: absolute;
+    left: 80%;
+
+    top: 155rem;
+  }
+
+
+  #vscode {
+    position: absolute;
+    left: 80%;
+    top: 105rem;
+  }
+
+
+
+  #json {
+    position: absolute;
+    top: 68rem;
+    left: 6%;
+  }
+
+  #angular {
+    position: absolute;
+    top: 340rem;
+    left: 15%;
+  }
+
+  #wordpress {
+    position: absolute;
+    left: 10%;
+    top: 58rem;
+  }
+
+
+
+
+  #windows {
+    position: absolute;
+    left: 20%;
+    top: 165rem;
+  }
+
+
+
+  #github {
+    position: absolute;
+    left: 78%;
+    top: 11rem;
+  }
+
+  #dropbox {
+    position: absolute;
+    left: 80%;
+    top: 135rem;
+  }
+
+  #binary {
+    position: absolute;
+    left: 75%;
+    top: 380rem;
+  }
+
+  #ai {
+    position: absolute;
+    left: 70%;
+    top: 310rem;
+  }
+
+  #flask {
+    position: absolute;
+    left: 20%;
+    top: 244rem;
+  }
+
+  #git {
+    position: absolute;
+    top: 268rem;
+    left: 10%;
+  }
+
+  #blender {
+    position: absolute;
+    top: 200rem;
+    left: 20%;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+  .profile {
+    width: 380px;
+  }
+
+  #zero {
+    position: absolute;
+    margin-top: 26vh;
+    left: 20%;
+    top: 0vh;
+  }
+
+  #one {
+
+    position: absolute;
+    right: 20%;
+    top: 80vh;
+  }
+
+  #two {
+    position: absolute;
+    left: 20%;
+    top: 130vh;
+  }
+
+  #three {
+    position: absolute;
+    right: 20%;
+    top: 180vh;
+  }
+
+  #four {
+    position: absolute;
+    left: 20%;
+    top: 230vh;
+  }
+
+  #five {
+    position: absolute;
+    right: 20%;
+    top: 280vh;
+  }
+
+  #six {
+    position: absolute;
+    left: 20%;
+    top: 330vh;
+  }
+
+  #seven {
+    position: absolute;
+    right: 20%;
+    top: 380vh;
+  }
+
+  #eight {
+    position: absolute;
+    left: 20%;
+    top: 430vh;
+  }
+
+  #nine {
+    position: absolute;
+    right: 20%;
+    top: 480vh;
+  }
+
+  #ten {
+    position: absolute;
+    left: 20%;
+    top: 530vh;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #code {
+    position: absolute;
+    left: 80%;
+    top: 155rem;
+    animation-delay: 0.5s;
+  }
+
+  #ai {
+    position: absolute;
+    left: 6%;
+    top: 165rem;
+  }
+
+  #angular {
+    position: absolute;
+    top: 232rem;
+    left: 8%;
+  }
+
+  #blender {
+    position: absolute;
+    top: 201.5rem;
+    left: 7%;
+  }
+
+  #windows {
+    position: absolute;
+    left: 7%;
+    top: 173rem;
+  }
+
+  #dropbox {
+    position: absolute;
+    left: 30%;
+    top: 144rem;
+  }
+
+  #link {
+    position: absolute;
+    left: 5%;
+    top: 127rem;
+    animation-delay: 1s;
+  }
+
+  #vscode {
+    position: absolute;
+    left: 80%;
+    top: 115rem;
+  }
+
+  #json {
+    position: absolute;
+    top: 69rem;
+    left: 6%;
+  }
+
+  .title {
+    margin-left: 0;
+    font-size: 39px;
+    margin-right: 0;
+  }
+
+  .profile {
+    margin: 0px auto -4vh;
+  }
+}
