@@ -18,6 +18,7 @@
 body {
   margin: 0%;
   padding: 0%;
+  text-rendering: optimizeSpeed;
   box-sizing: border-box;
   background-color: black;
   color: white;
