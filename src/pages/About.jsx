@@ -55,7 +55,10 @@ const About = () => {
             header = e;
           }}
         >
-          About <span className="hover:text-orange-600">Abhiyaan</span>
+          About{" "}
+          <span className="hover:text-orange-600 text-orange-600 lg:text-white">
+            Abhiyaan
+          </span>
         </h1>
         <p
           className="opacity-0 font-poppins"

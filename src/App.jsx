@@ -19,7 +19,6 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </Suspense>
-      {/* <Team /> */}
     </>
   );
 };
