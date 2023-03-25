@@ -31,7 +31,7 @@ const About = () => {
   return (
     // Every component should have bg-black and z-10 to get on top of particles
     <div
-      className=" w-screen md:h-[35rem] antialiased  h-full select-none lg:mt-56 mt-44 bg-black z-10 relative"
+      className=" w-screen md:h-[35rem] antialiased  h-[48rem] select-none lg:mt-56 mt-44 bg-black z-10 relative"
       id="about"
     >
       <video loop={true} autoPlay={true} muted={true}  className="w-full opacity-40  h-full object-cover">
@@ -39,9 +39,9 @@ const About = () => {
         Your browser does not support the video tag. I suggest you upgrade your
         browser.
       </video>
-      <div className="w-full h-full md-pb-0  lg:px-40  pb-7 absolute  top-0 px-4 text-white  flex justify-center flex-col" style={style}>
+      <div className="w-full h-full md-pb-0  lg:px-40   pb-7 absolute  top-0 px-4 text-white  flex justify-center flex-col" style={style}>
         <h1
-          className=" opacity-0 font-openSans text-3xl md:text-6xl  md:py-0 py-10 overflow-hidden"
+          className=" opacity-0 font-openSans text-3xl md:text-6xl  md:py-0 py-4 overflow-hidden"
           ref={(e) => {
             header = e;
           }}
