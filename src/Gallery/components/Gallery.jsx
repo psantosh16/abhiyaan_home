@@ -17,7 +17,13 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="media-container" id="gallery">
+      <div
+        className="gallery-heading bg-black z-10 py-[10px] text-center"
+        id="gallery"
+      >
+        <h1 className="text-6xl font-bold text-white">Gallery</h1>
+      </div>
+      <div className="media-container">
         <div className="media-scroller">
           {Years.map((year, i) => {
             return (
