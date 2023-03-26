@@ -1,15 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 
 import "./Event.scss";
-import { useEffect } from "react";
 
 export default function Events() {
-  function clickHandler(e) {
-    e.preventDefault();
-    console.log(e.target);
-  }
-
   useEffect(() => {
     const $menu = document.querySelector(".menu");
     const $items = document.querySelectorAll(".menu--item");
@@ -64,6 +58,7 @@ export default function Events() {
       scrollY += (touchX - touchStart) * 2.5;
       touchStart = touchX;
     };
+
     const handleTouchEnd = () => {
       isDragging = false;
       $menu.classList.remove("is-dragging");
@@ -113,13 +108,11 @@ export default function Events() {
         className="event-container bg-black z-10 min-h-screen flex flex-col gap-5 justify-center items-center"
         id="events"
       >
-        <h1 className="text-center text-6xl mb-12 font-bold hover:text-orange-600 text-orange-600 lg:text-white">
-          Events
-        </h1>
+        <h1 className="text-center text-6xl mb-12 font-bold">Events</h1>
         <div className="menu">
           {poster.map((p, i) => {
             return (
-              <div className="menu--item" key={i} onClick={clickHandler}>
+              <div className="menu--item" key={i}>
                 <figure>
                   <img src={p.link} alt="" loading="lazy" />
                 </figure>

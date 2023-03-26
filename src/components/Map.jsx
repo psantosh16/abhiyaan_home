@@ -15,7 +15,7 @@ const Map = () => {
         className="w-screen h-[60vh] lg:h-[80vh] p-4 md:p-8 lg:p-18 rounded-[2rem] md:rounded-[4rem]"
         src={googleApiLink}
         loading="lazy"
-        allowFullscreen=""
+        allowFullScreen=""
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
