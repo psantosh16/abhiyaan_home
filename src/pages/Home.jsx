@@ -38,9 +38,9 @@ const Home = () => {
         <Event />
         <Gallery />
         <Sponsers />
-        <Contact/>
-        <Map/>
-        <Footer/>
+        <Contact />
+        <Map />
+        <Footer />
       </div>
     </>
   );

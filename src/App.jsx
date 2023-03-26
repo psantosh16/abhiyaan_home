@@ -4,8 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const Home = React.lazy(() => waitFor(5000).then(() => import("./pages/Home")));
 const YearsPage = React.lazy(() => import("./Gallery/components/YearsPage"));
 const Preloader = React.lazy(() => import("./features/preloader/Preloader"));
-
-import Team from "./web-team/Team";
+const Team = React.lazy(() => import("./web-team/Team"));
 
 const App = () => {
   return (

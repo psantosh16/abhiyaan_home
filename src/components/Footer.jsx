@@ -41,21 +41,19 @@ const Footer = () => {
       <div className="social-links text-5xl flex gap-4 md:gap-8  justify-center py-4">
         {Icons.map((icon) => {
           return (
-            <>
-              <a href={icon.link} key={icon.id}>
-                <span>
-                  <i
-                    id="fa_icon"
-                    className={icon.class}
-                    style={{ color: "#ffffff" }}
-                  ></i>
-                </span>
-              </a>
-            </>
+            <a href={icon.link} key={icon.id}>
+              <span>
+                <i
+                  id="fa_icon"
+                  className={icon.class}
+                  style={{ color: "#ffffff" }}
+                ></i>
+              </span>
+            </a>
           );
         })}
       </div>
-      <div id="footer_text" className="text-center">
+      <div id="footer_text" className="text-center p-4">
         <p>Copyright © BVCOE, Navi Mumbai | All rights reserved</p>
         <h1>
           Designed And Developed By
