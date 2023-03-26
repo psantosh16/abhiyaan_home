@@ -21,7 +21,9 @@ export default function Gallery() {
         className="min-h-screen bg-black z-10 flex flex-col justify-center items-center gap-8 pt-8"
         id="gallery"
       >
-        <h1 className="text-6xl font-bold text-white">Gallery</h1>
+        <h1 className="text-6xl font-bold hover:text-orange-600 text-orange-600 lg:text-white">
+          Gallery
+        </h1>
         <div className="media-container">
           <div className="media-scroller">
             {Years.map((year, i) => {

@@ -113,7 +113,9 @@ export default function Events() {
         className="event-container bg-black z-10 min-h-screen flex flex-col gap-5 justify-center items-center"
         id="events"
       >
-        <h1 className="text-center text-6xl mb-12 font-bold">Events</h1>
+        <h1 className="text-center text-6xl mb-12 font-bold hover:text-orange-600 text-orange-600 lg:text-white">
+          Events
+        </h1>
         <div className="menu">
           {poster.map((p, i) => {
             return (
