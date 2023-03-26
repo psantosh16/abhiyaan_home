@@ -41,7 +41,7 @@ const Footer = () => {
       <div className="social-links text-5xl flex gap-4 md:gap-8  justify-center py-4">
         {Icons.map((icon) => {
           return (
-            <a href={icon.link} key={icon.id}>
+            <a href={icon.link} key={icon.id} target="_blank">
               <span>
                 <i
                   id="fa_icon"
