@@ -1,3 +1,4 @@
+import React from "react";
 
 const Map = () => {
   const googleApiLink =
@@ -8,13 +9,13 @@ const Map = () => {
       className="z-10 bg-black w-screen h-auto m-auto py-10 text-center"
     >
       <h1 className="text-5xl md:text-6xl font-openSans py-4">
-        Locate <span className="text-orange-600 hover:text-white">Us</span>
+        Locate <span className="transition duration-400 ease-in-out text-orange-600 hover:text-white">Us</span>
       </h1>
       <iframe
         className="w-screen h-[60vh] lg:h-[80vh] p-4 md:p-8 lg:p-18 rounded-[2rem] md:rounded-[4rem]"
         src={googleApiLink}
         loading="lazy"
-        allowFullscreen=""
+        allowFullScreen=""
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>

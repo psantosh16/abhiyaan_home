@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const Home = React.lazy(() => waitFor(5000).then(() => import("./pages/Home")));
 const YearsPage = React.lazy(() => import("./Gallery/components/YearsPage"));
 const Preloader = React.lazy(() => import("./features/preloader/Preloader"));
+const Team = React.lazy(() => import("./web-team/Team"));
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/years" element={<YearsPage />} />
+            <Route path="/web-team" element={<Team />} />
           </Routes>
         </BrowserRouter>
       </Suspense>
