@@ -45,7 +45,7 @@ const Navbar = () => {
       "events",
       "gallery",
       "teams",
-      "sponsers",
+      "sponsors",
       "contact"
     ];
     return (
@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 items-center h-full">
         <div className="flex items-center justify-between h-14 overflow-hidden">
           <div>
-            <a href="/">
+            <a href="#home">
               <img
                 src={Logo}
                 className={`h-auto w-[10rem] overflow-hidden ${
