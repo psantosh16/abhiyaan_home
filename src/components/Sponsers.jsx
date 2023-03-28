@@ -36,7 +36,7 @@ const Sponsers = () => {
   ];
   return (
     <div
-      id="sponsers"
+      id="sponsors"
       className="w-screen h-auto bg-black px-4 pt-20 z-50 select-none"
     >
       <div className="text-white  text-5xl md:text-6xl font-openSans mb-4 overflow-hidden text-center">
