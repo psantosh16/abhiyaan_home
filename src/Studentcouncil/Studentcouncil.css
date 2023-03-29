@@ -521,11 +521,8 @@ h2 {
 }
 
 
-
 @media (max-width:770px) {
-    .TeamsHeader {
-        font-size: 10vw;
-    }
+    
 
     .tablink {
         width: 90%;
@@ -558,6 +555,16 @@ h2 {
     }
 }
 
+@media (min-width:560px) and (max-width:770px) {
+    .TeamsHeader {
+        font-size: 8vw;
+    }
+}
+@media (max-width:560px) {
+    .TeamsHeader {
+        font-size: 10vw;
+    }
+}
 
 
 
