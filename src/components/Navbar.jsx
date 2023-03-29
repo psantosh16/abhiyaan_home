@@ -52,7 +52,7 @@ const Navbar = () => {
       <>
         {el.map((item) => {
           return (
-            <li key={item} className="overflow-hidden hover:text-orange-500">
+            <li key={item} className="transition duration-400 ease-in-out overflow-hidden hover:text-orange-500">
               <HandelRender name={item} />
             </li>
           );

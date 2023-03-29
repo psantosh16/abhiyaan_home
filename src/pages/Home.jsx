@@ -13,6 +13,7 @@ import Event from "./Events/Event";
 import Map from "../components/Map";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import Teams from "../components/Teams";
 
 const Home = () => {
   return (
@@ -37,10 +38,11 @@ const Home = () => {
         <About />
         <Event />
         <Gallery />
+        <Teams />
         <Sponsers />
-        <Contact/>
-        <Map/>
-        <Footer/>
+        <Contact />
+        <Map />
+        <Footer />
       </div>
     </>
   );
