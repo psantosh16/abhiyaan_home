@@ -13,6 +13,7 @@ import Event from "./Events/Event";
 import Map from "../components/Map";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import Timeline from "./Events/Timeline";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
         </div>
         <About />
         <Event />
+        <Timeline />
         <Gallery />
         <Sponsers />
         <Contact />
