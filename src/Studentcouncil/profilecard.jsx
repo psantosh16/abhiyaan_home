@@ -11,7 +11,7 @@ function Profilecard(props) {
                 <h3>{props.name}</h3>
                 <p>{props.position}</p>
                 <div className="social-links">
-                    <a href={props.insta}>
+                    <a href={props.insta} target="_blank">
 
                         <i className="fab fa-instagram"></i>
                     </a>
