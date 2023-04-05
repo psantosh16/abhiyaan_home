@@ -36,7 +36,7 @@ const Sponsers = () => {
   ];
   return (
     <div
-      id="sponsers"
+      id="sponsors"
       className="w-screen h-auto bg-black px-4 pt-20 z-50 select-none"
     >
       <div className="text-white  text-5xl md:text-6xl font-openSans mb-4 overflow-hidden text-center">
@@ -49,7 +49,7 @@ const Sponsers = () => {
           return (
             <div
               key={sp.id}
-              className="transition duration-400 ease-in-out w-auto  h-auto  hover:scale-105 hover:ease-in-out p-12  md:p-0 lg:p-3"
+              className="transition duration-400 ease-in-out w-auto  h-auto  hover:scale-105 hover:ease-in-out p-8  md:p-0 lg:p-3"
             >
               <a href={sp.link} target="_blank">
                 <img
