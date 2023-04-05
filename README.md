@@ -49,7 +49,7 @@ Go to repo and you will see `Compare and Pull request` click on it
 
 ________________________________________________________________________________________________________________________
 
-This pull request will be analysed  and  will decide if it can be merged to the master branch or not.
+This pull request will be analysed and will decide if it can be merged to the master branch or not.
 
 
 [For detail or practical learning see this](https://www.freecodecamp.org/news/how-to-use-git-and-github-in-a-team-like-a-pro/)
