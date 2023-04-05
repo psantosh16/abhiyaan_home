@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredoka+One&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;800&display=swap');
 
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100%;
+    background-color: #1a1a1a;
+
     font-family: 'Dosis', sans-serif;
 }
 
@@ -42,6 +45,8 @@ h2 {
 }
 
 .profile-card:hover {
+    transform: translateY(28px);
+
     border-radius: 10px;
     height: 260px;
 }
@@ -144,7 +149,7 @@ h2 {
     position: relative;
     font-family: sans-serif;
     width: 260px;
-    height: 65px;
+    height: 60px;
     background: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -155,8 +160,9 @@ h2 {
 }
 
 .s-profile-card:hover {
+
     border-radius: 10px;
-    height: 65px;
+    height: 60px;
     width: 300px;
 }
 
@@ -184,10 +190,10 @@ h2 {
 }
 
 .s-profile-card h3 {
-    font-size: 21px;
+    font-size: 20px;
     font-family: sans-serif;
     color: black;
-    margin: 0;
+    margin-bottom: 2px;
 }
 
 .s-profile-card:hover .s-profile-card h3 {
@@ -196,14 +202,15 @@ h2 {
 }
 
 .s-profile-card h4 {
-    font-size: 15px;
+    font-size: 13px;
     color: #0c52a1;
     font-family: sans-serif;
-    margin: 2px 0 9px 0;
+    margin: -3px 0 0px 0;
 }
 
 .s-caption .s-social-links a {
     color: #333;
+    /* margin: auto; */
     margin-right: 15px;
     font-size: 21px;
     transition: .6s;
@@ -312,6 +319,8 @@ h2 {
 #Teams {
     overflow: hidden;
     width: 100%;
+    height: 100%;
+
     text-align: center;
     background-color: #f9f9fa;
     padding: 5rem 0rem;
@@ -353,7 +362,10 @@ h2 {
     transition: 0.3s ease-out;
 }
 
-
+:hover.tablink{
+    background-color: rgb(48, 48, 48);
+    
+}
 
 .tabcontent {
     color: white;
@@ -370,9 +382,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.6s;
 }
 
 .subTeam {
+    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
 }
@@ -381,6 +395,7 @@ h2 {
     /* margin-left: 1rem; */
     position: relative;
     margin-top: 5rem;
+    transition: 0.6s;
     /* text-align: center; */
 }
 
@@ -391,6 +406,7 @@ h2 {
 }
 
 .TeamMember1 img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -422,6 +438,7 @@ h2 {
 .TeamMember1:hover .memberName p {
     opacity: 100%;
 }
+
 
 .TeamMember1:hover .social-icon-member {
     animation: hovericon 0.5s ease-out;
@@ -522,7 +539,7 @@ h2 {
 
 
 @media (max-width:770px) {
-    
+
 
     .tablink {
         width: 90%;
@@ -560,6 +577,7 @@ h2 {
         font-size: 8vw;
     }
 }
+
 @media (max-width:560px) {
     .TeamsHeader {
         font-size: 10vw;

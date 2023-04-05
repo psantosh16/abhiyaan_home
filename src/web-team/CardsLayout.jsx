@@ -8,7 +8,7 @@ function CardsLayout(props) {
       <div className="firstCard"></div>
       <UCard
         ids="zero"
-        img="/web-assets/img/tp.jpg"
+        img="/web-assets/img/sachin1.png"
         name="Sachin Rathod (Lead)"
         insta="https://www.instagram.com/sachinrathod_125/"
         linked="https://www.linkedin.com/in/rs-rathodsachin/"

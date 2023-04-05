@@ -20,7 +20,7 @@ export default function Team() {
       ></link>
       <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
       <div className="a">
-        <div className="title">Web Devlopment Team</div>
+        <div className="title">Web Development Team</div>
       </div>
       <div className="container">
         <Background />
