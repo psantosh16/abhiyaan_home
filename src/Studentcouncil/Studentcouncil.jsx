@@ -307,7 +307,7 @@ export default function Studentcouncil() {
 
 
       <div
-        className="tabcontent"
+        className="tabcontent" id="rep"
         style={{ display: Rep ? "block" : "none" }}
       >
         <div className="subTeam">

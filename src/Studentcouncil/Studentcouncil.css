@@ -8,11 +8,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #1a1a1a;
 
     font-family: 'Dosis', sans-serif;
 }
-
+#rep{
+height: 320px;
+}
 ::-webkit-scrollbar {
     width: 0px;
 
