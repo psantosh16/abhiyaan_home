@@ -14,6 +14,7 @@ import Map from "../components/Map";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 import Teams from "../components/Teams";
+import Timeline from "./Events/Timeline";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
         </div>
         <About />
         <Event />
+        <Timeline />
         <Gallery />
         <Teams />
         <Sponsers />

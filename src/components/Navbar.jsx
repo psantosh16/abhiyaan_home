@@ -46,13 +46,16 @@ const Navbar = () => {
       "gallery",
       "teams",
       "sponsors",
-      "contact"
+      "contact",
     ];
     return (
       <>
         {el.map((item) => {
           return (
-            <li key={item} className="transition duration-400 ease-in-out overflow-hidden hover:text-orange-500">
+            <li
+              key={item}
+              className="transition duration-400 ease-in-out overflow-hidden hover:text-orange-500"
+            >
               <HandelRender name={item} />
             </li>
           );
@@ -81,7 +84,7 @@ const Navbar = () => {
       className={`w-screen top-0 fixed z-[100] md:h-[10vh] h-auto select-none  ${
         navbar
           ? "backdrop-blur-[1rem]  bg-[rgba(0%,_0%,_0%,_0.75)] h-screen"
-          : "backdrop-blur-[0.5rem]  bg-[hsl(0,_0%,_100%,_/,_0.1)]"
+          : "backdrop-blur-[0.5rem]  bg-[hsl(0,_0%,_100%,_0.05)]"
       }`}
     >
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 items-center h-full">
