@@ -1,7 +1,7 @@
-# abhiyaan_home
+# Abhiyaan 2023
 
 ##### 1) Make folder on your pc
-##### 2) Now , clone this repository by entring following code in terminal in vs-code (Make sure you are in same folder created above)
+##### 2) Clone this repository by entring following code in terminal in vs-code (Make sure you are in same folder created above)
 
 `git clone https://github.com/psantosh16/abhiyaan_home.git`
 
