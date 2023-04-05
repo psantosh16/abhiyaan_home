@@ -580,6 +580,9 @@ h2 {
 }
 
 @media (max-width:560px) {
+    #rep{
+        height: 600px;
+    }
     .TeamsHeader {
         font-size: 10vw;
     }
