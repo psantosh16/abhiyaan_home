@@ -163,7 +163,7 @@ export default function Studentcouncil() {
             <Profilecard img="/ss-assets/atharva.jpg" name="Atharva Satam" insta="https://www.instagram.com/atharv_satam/" position="Jt. General Secretary" linked="" />
           </div>
           <div className="subTeamMember1">
-            <Profilecard img="/ss-assets/yash.jpeg" name="Yash Khumbhar" insta="https://www.instagram.com/y.a.s.h.1804/" position="Jt. General Secretary" linked="" />
+            <Profilecard img="/ss-assets/yash.jpg" name="Yash Khumbhar" insta="https://www.instagram.com/y.a.s.h.1804/" position="Jt. General Secretary" linked="" />
           </div>
           <div className="subTeamMember1">
             <Profilecard img="/ss-assets/varad.jpg" name="Varad Mahumkar" insta="https://www.instagram.com/Varadmhamunkar/" position="Jt. General Secretary" linked="" />
@@ -207,7 +207,7 @@ export default function Studentcouncil() {
         style={{ display: SS ? "block" : "none" }}
       >
         <div className="TeamMember1">
-          <Profilecard img="/ss-assets/sankalp.jpeg" name="Sankalp Patil" insta="https://www.instagram.com/sankalp_8606/" position="Sports Secretary" linked="" />
+          <Profilecard img="/ss-assets/sankalp.jpg" name="Sankalp Patil" insta="https://www.instagram.com/sankalp_8606/" position="Sports Secretary" linked="" />
         </div>
         <div className="subTeam">
           <div className="subTeamMember1">
@@ -307,7 +307,7 @@ export default function Studentcouncil() {
 
 
       <div
-        className="tabcontent"
+        className="tabcontent" id="rep"
         style={{ display: Rep ? "block" : "none" }}
       >
         <div className="subTeam">
@@ -335,4 +335,3 @@ export default function Studentcouncil() {
     </div>
   );
 }
-
