@@ -32,14 +32,14 @@ const About = () => {
   return (
     // Every component should have bg-black and z-10 to get on top of particles
     <div
-      className=" w-screen md:h-[35rem] antialiased  h-[48rem] select-none lg:mt-56 mt-44 bg-black z-10 relative"
+      className="  w-screen md:h-[45rem] antialiased  h-[48rem] select-none lg:mt-5 mt-44 bg-black z-10 relative"
       id="about"
     >
       <video
         loop={true}
         autoPlay={true}
         muted={true}
-        className="w-full opacity-40  h-full object-cover"
+        className="w-full  opacity-40  h-full object-cover"
       >
         <source src="assets/videoBg.mp4" type="video/mp4" />
         Your browser does not support the video tag. I suggest you upgrade your

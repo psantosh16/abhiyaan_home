@@ -9,10 +9,11 @@ export default function Timeline() {
 
   return (
     <>
+      <div id="Timeline" className="pt-8">
       <div
         id="Events"
-        style={{ paddingBottom: "120px", paddingTop: "4rem" }}
-        className="z-10
+        style={{ paddingBottom: "120px", paddingTop: "4rem"  }}
+        className="z-10 
       "
       >
         <div className="timeline">
@@ -27,7 +28,7 @@ export default function Timeline() {
                   many events are organized as social gatherings which let
                   students learn to value and respect each other's beliefs and
                   culture, promoting humble engagement across differences in
-                  Abhiyaan 2022.
+                  Abhiyaan 2023.
                 </p>
                 <p className="card-text"></p>
               </div>
@@ -39,7 +40,7 @@ export default function Timeline() {
                 <h2 className="card-title text-center">Sport Events</h2>
                 <p className="card-text">
                   Through sports, there can be a worthy balance between physical
-                  and mental growth of the students. Abhiyaan 2022 has arranged
+                  and mental growth of the students. Abhiyaan 2023 has arranged
                   various sports events like football, volleyball, cricket,
                   basketball, kho kho, kabbadi, etc. Further all, these events
                   offer exciting prizes to the winners. The main purpose of
@@ -56,7 +57,7 @@ export default function Timeline() {
                 <h2 className="card-title text-center">Technical Events</h2>
                 <p className="card-text">
                   What is a college life without some fun events and
-                  competitions? Here we are, back with ARISE 2022 with a great
+                  competitions? Here we are, back with ARISE 2023 with a great
                   motive to inspire, develop and gain technical knowledge with
                   so many fun events and competitions, also a chance to earn
                   many prizes and to have fun in a comprehensive manner.
@@ -96,6 +97,7 @@ export default function Timeline() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

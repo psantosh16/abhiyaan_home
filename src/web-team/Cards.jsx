@@ -25,7 +25,7 @@ function UCard(props) {
               />
             </a>
           </div>
-          <div id="portfolioLink">
+          {/* <div id="portfolioLink">
             <a href={props.pf} target="blank">
               <img
                 src="/web-assets/icons/pf.png"
@@ -33,7 +33,7 @@ function UCard(props) {
                 className="links"
               />
             </a>
-          </div>
+          </div> */}
           <div >
             <a href={props.github} target="blank">
               <img
@@ -46,7 +46,8 @@ function UCard(props) {
           </div>
           <img src={props.img} alt="" className="boxes" />
           <div className="name">
-            <p style={{ whiteSpace: "nowrap" }}>{props.name}</p>
+            <p>{props.name}</p>
+            <p >{props.position}</p>
           </div>
         </div>
       </div>
