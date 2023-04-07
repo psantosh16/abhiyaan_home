@@ -140,3 +140,4 @@ const poster = [
   { link: "/event/e14.jpg" },
   { link: "/event/e15.jpg" },
 ];
+
