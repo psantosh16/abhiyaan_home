@@ -179,6 +179,7 @@ header::before {
 
 .boxes {
   width: 180px;
+  object-fit: contain;
   height: 180px;
   z-index: 10;
   position: absolute;
@@ -248,7 +249,7 @@ header::before {
 
 .name {
   left: 50%;
-  top: 102%;
+  top: 103%;
   transform: translate(-50%, 0%);
   position: absolute;
   width: 200px;
@@ -285,6 +286,7 @@ header::before {
   top: 120rem;
   animation-delay: 1s;
 }
+
 
 #swift {
   position: absolute;
