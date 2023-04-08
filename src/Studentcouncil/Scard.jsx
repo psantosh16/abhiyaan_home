@@ -1,3 +1,4 @@
+
 import React from "react";
 function Scard(props) {
   return (
@@ -15,4 +16,5 @@ function Scard(props) {
   );
 }
 export default Scard;
+
 
