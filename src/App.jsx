@@ -6,7 +6,9 @@ const Home = React.lazy(() => waitFor(5000).then(() => import("./pages/Home")));
 const YearsPage = React.lazy(() => import("./Gallery/components/YearsPage"));
 const Preloader = React.lazy(() => import("./features/preloader/Preloader"));
 const Team = React.lazy(() => import("./web-team/Team"));
-const Studentcouncil = React.lazy(() => import("./Studentcouncil/Studentcouncil"));
+const Studentcouncil = React.lazy(() =>
+  import("./Studentcouncil/Studentcouncil")
+);
 
 const App = () => {
   return (
