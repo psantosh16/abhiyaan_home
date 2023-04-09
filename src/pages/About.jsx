@@ -32,7 +32,7 @@ const About = () => {
   return (
     // Every component should have bg-black and z-10 to get on top of particles
     <div
-      className="  w-screen md:h-[45rem] antialiased  h-[48rem] select-none lg:mt-5 mt-44 bg-black z-10 relative"
+      className="h-[56rem]   w-screen antialiased  md:h-[45rem]   select-none lg:mt-5 mt-44 bg-black z-10 relative"
       id="about"
     >
       <video
@@ -61,7 +61,7 @@ const About = () => {
           </span>
         </h1>
         <p
-          className="opacity-0 font-poppins"
+          className="opacity-0 font-poppins text-justify"
           ref={(e) => {
             paragraph = e;
           }}
