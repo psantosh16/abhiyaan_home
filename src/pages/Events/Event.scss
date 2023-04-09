@@ -1,9 +1,13 @@
 .menu {
   overflow: hidden;
-  width: 90vw;
+  width: 100vw;
   position: relative;
   z-index: 1;
-  height: 40vh;
+  height: 60vh;
+
+  @media (min-width: 767px) {
+    width: 90vw;
+  }
 
   &--item {
     position: absolute;
@@ -17,7 +21,7 @@
     cursor: pointer;
 
     @media (max-width: 767px) {
-      width: 70vw;
+      width: 100vw;
       height: 60vh;
     }
 
@@ -46,7 +50,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         vertical-align: middle;
         transform-origin: center;
       }
