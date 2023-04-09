@@ -112,7 +112,7 @@ export default function Events() {
         <div className="menu">
           {poster.map((p, i) => {
             return (
-              <div className="menu--item" key={i}>
+              <div className=" menu--item " key={i}>
                 <figure>
                   <img src={p.link} alt="" loading="lazy" />
                 </figure>
@@ -140,4 +140,3 @@ const poster = [
   { link: "/event/e14.jpg" },
   { link: "/event/e15.jpg" },
 ];
-

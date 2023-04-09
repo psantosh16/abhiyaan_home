@@ -36,7 +36,7 @@ export default function Background() {
         />
       </div>
 
-      <div data-aos="fade-left">
+      <div data-aos="fade-down">
         <img
           id="css"
           src="/web-assets/icons/css.png"
@@ -44,7 +44,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div data-aos="fade-down-left">
+      <div data-aos="fade-down-down">
         <img
           id="wordpress"
           src="/web-assets/icons/wordpress.png"
@@ -52,7 +52,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div data-aos="fade-up-right">
+      <div data-aos="fade-up-up">
         <img
           id="dev2"
           src="/web-assets/icons/developer (2).png"
@@ -60,7 +60,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div data-aos="fade-up-left">
+      <div data-aos="fade-up">
         <img
           id="vscode"
           src="/web-assets/icons/vscode.png"
@@ -68,7 +68,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div data-aos="fade-down-left">
+      <div data-aos="fade-down">
         <img
           id="vstudio"
           src="/web-assets/icons/vs.png"
@@ -76,7 +76,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div data-aos="fade-down-right">
+      <div data-aos="fade-up">
         <img
           id="java"
           src="/web-assets/icons/java.png"
@@ -100,7 +100,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div>
+      <div data-aos="fade-down">
         <img
           id="react"
           src="/web-assets/icons/react.png"
@@ -116,13 +116,13 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div id="swift">
+      <div id="swift" data-aos="fade-down">
         <img src="/web-assets/icons/swift.png" alt="" className="icons" />
       </div>
-      <div id="code" data-aos="fade-right">
+      <div id="code" data-aos="fade-up">
         <img src="/web-assets/icons/code.png" alt="" className="icons" />
       </div>
-      <div id="link" data-aos="fade-up-right">
+      <div id="link" data-aos="fade-up">
         <img src="/web-assets/icons/link (1).png" alt="" className="icons" />
       </div>
       <div id="python" data-aos="fade-down">
@@ -135,33 +135,33 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div id="robot" data-aos="fade-left">
+      <div id="robot" data-aos="fade-down">
         <img src="/web-assets/icons/robot.png" alt="" className="icons" />
       </div>
 
-      <div id="jscript">
+      <div id="jscript" data-aos="fade-down">
         <img src="/web-assets/icons/js.png" alt="" className="icons" />
       </div>
-      <div id="android" data-aos="zoom-in-right">
+      <div id="android" data-aos="zoom-in-up">
         <img src="/web-assets/icons/android.png" alt="" className="icons" />
       </div>
-      <div id="blockchain" data-aos="zoom-in-right">
+      <div id="blockchain" data-aos="zoom-in-up">
         <img src="/web-assets/icons/blockchain.png" alt="" className="icons" />
       </div>
 
       <div id="blender" data-aos="zoom-out-down">
         <img src="/web-assets/icons/blender.png" alt="" className="icons" />
       </div>
-      <div id="docker">
+      <div id="docker" data-aos="fade-up">
         <img src="/web-assets/icons/docker.png" alt="" className="icons" />
       </div>
-      <div id="windows" data-aos="zoom-out-right">
+      <div id="windows" data-aos="zoom-out-up">
         <img src="/web-assets/icons/windows.png" alt="" className="icons" />
       </div>
-      <div id="github1" data-aos="fade-right">
+      <div id="github1" data-aos="fade-up">
         <img src="/web-assets/icons/github.png" alt="" className="icons" />
       </div>
-      <div>
+      <div data-aos="fade-down">
         <img
           id="oracle"
           src="/web-assets/icons/oracle.png"
@@ -169,7 +169,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img
           id="laptop"
           src="/web-assets/icons/laptop.png"
@@ -177,7 +177,7 @@ export default function Background() {
           className="icons"
         />
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img
           id="brave"
           src="/web-assets/icons/brave.png"

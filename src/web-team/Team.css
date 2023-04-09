@@ -35,7 +35,6 @@ header::before {
 .a {
   position: fixed;
   /* top: 20px; */
-  background: linear-gradient(135deg, rgba(85, 85, 85, 0.1), rgba(255, 255, 255, 0));
   /* filtr: blur(0px); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -290,7 +289,7 @@ header::before {
 
 #swift {
   position: absolute;
-  left: 80%;
+  right: 10%;
   top: 87rem;
   animation-delay: 0.5s;
 }
@@ -617,7 +616,7 @@ header::before {
   #react {
     position: absolute;
     top: 39rem;
-    left: 75%;
+    right: 25%;
     animation: spinning 2.6s linear infinite;
   }
 
@@ -649,6 +648,7 @@ header::before {
   }
 
   .icons {
+
     width: 3rem;
     height: 3rem;
   }
@@ -659,7 +659,7 @@ header::before {
   height: 0px;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 567px) {
   .outerboxes {
     scale: 0.9;
   }
@@ -679,8 +679,8 @@ header::before {
 
   #oracle {
     position: absolute;
-    left: 75%;
-    top: 231rem;
+    left: 55%;
+    top: 238rem;
     animation-delay: 1s;
 
   }
@@ -714,7 +714,7 @@ header::before {
   #jscript {
     width: 100px;
     position: absolute;
-    left: 70%;
+    right: 30%;
     top: 173rem;
     animation-delay: 0.5s;
   }
@@ -736,7 +736,7 @@ header::before {
   #css {
     position: absolute;
     top: 127rem;
-    left: 80%;
+    right: 20%;
     animation-delay: 1.7s;
   }
 
@@ -764,7 +764,7 @@ header::before {
 
   #api {
     position: absolute;
-    left: 76%;
+    right: 24%;
     top: 69rem;
     animation: spinning 3s linear infinite;
   }
@@ -791,7 +791,7 @@ header::before {
 
   #figma {
     position: absolute;
-    left: 80%;
+    right: 20%;
 
     top: 155rem;
   }
@@ -799,7 +799,7 @@ header::before {
 
   #vscode {
     position: absolute;
-    left: 80%;
+    right: 20%;
     top: 105rem;
   }
 
@@ -836,25 +836,25 @@ header::before {
 
   #github1 {
     position: absolute;
-    left: 78%;
+    right: 22%;
     top: 11rem;
   }
 
   #dropbox {
     position: absolute;
-    left: 80%;
+    right: 20%;
     top: 135rem;
   }
 
   #binary {
     position: absolute;
-    left: 75%;
+    right: 25%;
     top: 380rem;
   }
 
   #ai {
     position: absolute;
-    left: 70%;
+    right: 30%;
     top: 310rem;
   }
 
@@ -881,11 +881,12 @@ header::before {
 
 
 @media only screen and (max-width: 992px) {
-  .icons{
+  .icons {
     width: 30px;
     height: 30px;
     filter: blur(2px);
   }
+
   .title {
     font-size: 2.6rem;
   }
@@ -899,7 +900,7 @@ header::before {
   .profile {
     width: 380px;
   }
-  
+
   #zero {
     position: absolute;
     margin-top: 26vh;
@@ -976,7 +977,7 @@ header::before {
 
   #code {
     position: absolute;
-    left: 80%;
+    right: 20%;
     top: 155rem;
     animation-delay: 0.5s;
   }
@@ -1020,7 +1021,7 @@ header::before {
 
   #vscode {
     position: absolute;
-    left: 80%;
+    right: 20%;
     top: 115rem;
   }
 
